@@ -1,0 +1,46 @@
+insight_id: ins-oc-cx-role-shift-cross-selling
+title: CX time savings are redirected into cross-selling work
+pillar: Operating Capabilities
+dimension: Org Structure and Composition
+claim_type: descriptive
+maturity_level: m1
+summary: >
+  One transcript says CX agents are expected to use AI-created time savings for
+  cross-selling, adding revenue-generation goals to roles that were previously
+  service-only.
+
+evidence_status: direct_quote_anchored
+synthesis_status: draft
+scorecard_status: blocked_pending_human_review
+deck_status: blocked_pending_human_review
+
+weighted_support:
+  supporting_quote_span_count: 1
+  supporting_source_count: 1
+  contradicting_source_count: 0
+  weighted_support_score: 0.44
+  confidence_note: Clean direct quote, but limited to one workflow and one company context.
+
+source_links:
+  - source_id: src-startup-20260603-nishith-sahu
+    source_version: sha256:8aa987735cb0e74ff323dd34539fb5dd0befb9b7a7d168ecf53ca6c523e4073a
+    transcript_file: interviews/transcripts/startups/Startup_Nishith Sahu_20260603.md
+    quote_span_ids:
+      - qsp-nishith-cx-cross-sell-role-shift-20260603-001
+
+caveats:
+  - Current support is mono-source.
+  - The cross-selling engine itself is described as a separate, non-generative system from the response agent workflow.
+
+contradiction_links: []
+
+human_review:
+  state: pending
+  reviewer: null
+  last_reviewed: null
+  decision_note: Keep as a narrow role-shift example rather than a general labor-displacement claim.
+
+provenance:
+  created_by: codex-atomic-evidence-pass
+  created_at: 2026-06-11
+  updated_at: 2026-06-11

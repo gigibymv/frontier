@@ -1,0 +1,46 @@
+insight_id: ins-oc-ring-fenced-experimentation-budget
+title: Experimentation spend is ring-fenced from broader AI rollout decisions
+pillar: Operating Capabilities
+dimension: AI Economics and Capacity Management
+claim_type: descriptive
+maturity_level: m1
+summary: >
+  One transcript describes a limited experimentation budget that gives people room
+  to try new AI tools under looser rules while a cross-functional council still
+  decides what gets scaled or shut down.
+
+evidence_status: direct_quote_anchored
+synthesis_status: draft
+scorecard_status: blocked_pending_human_review
+deck_status: blocked_pending_human_review
+
+weighted_support:
+  supporting_quote_span_count: 1
+  supporting_source_count: 1
+  contradicting_source_count: 0
+  weighted_support_score: 0.46
+  confidence_note: Clear direct evidence of a budget-and-governance pattern, but still mono-source.
+
+source_links:
+  - source_id: src-startup-20260601-cullen-brown
+    source_version: sha256:d48feb086e2b1fdcc32beeb65928cc3f497039103666d755b4d413f6a3582312
+    transcript_file: interviews/transcripts/startups/Startup_Cullen Brown_20260601.md
+    quote_span_ids:
+      - qsp-cullen-experimentation-budget-20260601-001
+
+caveats:
+  - Current support is mono-source.
+  - The transcript establishes the existence of ring-fenced experimentation room, not the size or utilization rate of the budget.
+
+contradiction_links: []
+
+human_review:
+  state: pending
+  reviewer: null
+  last_reviewed: null
+  decision_note: Good atomic evidence for experimentation governance, but not ready for scorecard use without corroboration.
+
+provenance:
+  created_by: codex-atomic-evidence-pass
+  created_at: 2026-06-11
+  updated_at: 2026-06-11

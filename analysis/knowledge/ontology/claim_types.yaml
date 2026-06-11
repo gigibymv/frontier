@@ -1,0 +1,13 @@
+allowed_values:
+  - descriptive
+  - comparative
+  - explanatory
+  - causal_hypothesis
+  - taxonomy
+  - scorecard_candidate
+  - deck_claim
+  - red_flag
+
+rules:
+  - `scorecard_candidate` does not imply scorecard approval.
+  - `deck_claim` does not imply slide approval.

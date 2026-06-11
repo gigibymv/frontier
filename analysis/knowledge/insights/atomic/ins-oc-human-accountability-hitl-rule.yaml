@@ -1,0 +1,51 @@
+insight_id: ins-oc-human-accountability-hitl-rule
+title: Human review is placed where accountable owners carry the consequence
+pillar: Operating Capabilities
+dimension: Judgment and Accountability
+claim_type: descriptive
+maturity_level: m2
+summary: >
+  Two interviews tie human review to the accountable owner: one frames the decision
+  as identifying who would be responsible if something goes wrong, while the other
+  keeps commit responsibility with the human shipper even when AI generated the code.
+
+evidence_status: direct_quote_anchored
+synthesis_status: draft
+scorecard_status: blocked_pending_human_review
+deck_status: blocked_pending_human_review
+
+weighted_support:
+  supporting_quote_span_count: 2
+  supporting_source_count: 2
+  contradicting_source_count: 0
+  weighted_support_score: 0.71
+  confidence_note: Two anchored sources support the accountability rule from different workflows.
+
+source_links:
+  - source_id: src-startup-20260508-alec-dickinson
+    source_version: sha256:b2761e6376f3cd658b6362cfee3bbd3e7645f53e46f2ad7f92f81d4e50a602cc
+    transcript_file: interviews/transcripts/startups/Startup_Alec Dickinson_20260508.md
+    quote_span_ids:
+      - qsp-alec-accountable-hitl-20260508-001
+  - source_id: src-startup-20260512-michael-bernstein
+    source_version: sha256:f423355ec35af6d6426dd85391215a7e4989a212b47ab4455b5ec8fafbe35bdf
+    transcript_file: interviews/transcripts/startups/Startup_Michael Bernstein_20260512.md
+    quote_span_ids:
+      - qsp-michael-commit-ownership-20260512-001
+
+caveats:
+  - The two sources come from different workflow types and do not describe the same control point.
+  - Current support is strong for accountability logic, not for a standardized HITL implementation template.
+
+contradiction_links: []
+
+human_review:
+  state: pending
+  reviewer: null
+  last_reviewed: null
+  decision_note: Ready for later synthesis as an accountability pattern, but not ready for scorecard use.
+
+provenance:
+  created_by: codex-hardening-pass
+  created_at: 2026-06-11
+  updated_at: 2026-06-11

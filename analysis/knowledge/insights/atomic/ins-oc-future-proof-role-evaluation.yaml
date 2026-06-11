@@ -1,0 +1,46 @@
+insight_id: ins-oc-future-proof-role-evaluation
+title: Role evaluation includes future-proofing and AI proficiency
+pillar: Operating Capabilities
+dimension: Talent Readiness
+claim_type: descriptive
+maturity_level: m1
+summary: >
+  One enterprise interview describes evaluating new roles against two linked tests:
+  whether the role remains necessary in the near future and whether the hire is AI-proficient
+  enough to adapt as the work changes.
+
+evidence_status: direct_quote_anchored
+synthesis_status: draft
+scorecard_status: blocked_pending_human_review
+deck_status: blocked_pending_human_review
+
+weighted_support:
+  supporting_quote_span_count: 1
+  supporting_source_count: 1
+  contradicting_source_count: 0
+  weighted_support_score: 0.45
+  confidence_note: Clear direct wording, but still mono-source and specific to one hiring regime.
+
+source_links:
+  - source_id: src-enterprise-20260609-pat-sheth
+    source_version: sha256:ed8bbee4654d7ff161faf0dedcfee1b3a5bfe3619bdf25f74fabd529117fa8e1
+    transcript_file: interviews/transcripts/enterprise/Enterprise_Pat Sheth_20260609.md
+    quote_span_ids:
+      - qsp-pat-future-proof-role-20260609-001
+
+caveats:
+  - Current support is mono-source.
+  - The quote supports a hiring-screen pattern, not a firm-wide talent system beyond that scope.
+
+contradiction_links: []
+
+human_review:
+  state: pending
+  reviewer: null
+  last_reviewed: null
+  decision_note: Keep as a narrow talent-readiness pattern until corroborated by a second interview.
+
+provenance:
+  created_by: codex-hardening-pass
+  created_at: 2026-06-11
+  updated_at: 2026-06-11

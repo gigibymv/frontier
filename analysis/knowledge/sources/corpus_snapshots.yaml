@@ -1,0 +1,15 @@
+schema_version: 0.1
+
+corpus_snapshots:
+  - corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+    snapshot_date: 2026-06-11
+    description: Initial transcript corpus snapshot for the provenance-first knowledge scaffold.
+    source_scope:
+      transcript_root: interviews/transcripts
+      source_type: transcript_markdown
+    included_source_count: 26
+    inclusion_rule: All transcript markdown files present under interviews/transcripts on 2026-06-11.
+    registry_status: full_registration
+    notes:
+      - Source-version hashing is populated for the full transcript corpus captured in this snapshot.
+      - Quote-span anchoring remains intentionally partial and limited to the strongest Operating Capabilities examples.

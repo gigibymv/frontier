@@ -1,0 +1,294 @@
+---
+schema_version: 0.1
+corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+default_source_type: transcript_markdown
+default_parser_version: pending-parser-selection
+default_extraction_run_id: pending-extraction
+transcripts:
+- source_id: src-enterprise-20260611-dmitry-shkolnik
+  source_version: sha256:168f559f8b3205e41fcff5ab953ab6b94572002bad680f7876f6f181cfa47106
+  transcript_file: interviews/transcripts/enterprise/Enterprise_Dmitry Shkolnik_20260611.md
+  source_type: transcript_markdown
+  interviewee: Dmitry Shkolnik
+  company: unknown
+  company_type: enterprise_large_org
+  interview_date: '2026-06-11'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-enterprise-20260609-pat-sheth
+  source_version: sha256:ed8bbee4654d7ff161faf0dedcfee1b3a5bfe3619bdf25f74fabd529117fa8e1
+  transcript_file: interviews/transcripts/enterprise/Enterprise_Pat Sheth_20260609.md
+  source_type: transcript_markdown
+  interviewee: Pat Sheth
+  company: unknown
+  company_type: enterprise_large_org
+  interview_date: '2026-06-09'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-enterprise-20260611-taoufik-arif
+  source_version: sha256:18fb4aad76b207d259e9253e2ff84a893cc5fa4e6603e26c89446f0ffe5cf661
+  transcript_file: interviews/transcripts/enterprise/Enterprise_Taoufik Arif - 20260611.md
+  source_type: transcript_markdown
+  interviewee: Taoufik Arif
+  company: unknown
+  company_type: enterprise_large_org
+  interview_date: '2026-06-11'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-expert-20260604-aaron-white
+  source_version: sha256:26b10b87addf3b99bb950135541fb29ed06f7343e74fb96b43292c8662d6b8b5
+  transcript_file: interviews/transcripts/expert/Expert_Aaron White_20260604.md
+  source_type: transcript_markdown
+  interviewee: Aaron White
+  company: unknown
+  company_type: expert
+  interview_date: '2026-06-04'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260527-aditya-nemmaluri
+  source_version: sha256:b4f6986399f810cfdf05bccfeb0af9d51cbfb0903043cbf9d5c5761813ff9677
+  transcript_file: interviews/transcripts/startups/Startup_Aditya Nemmaluri_20260527.md
+  source_type: transcript_markdown
+  interviewee: Aditya Nemmaluri
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-05-27'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260508-alec-dickinson
+  source_version: sha256:b2761e6376f3cd658b6362cfee3bbd3e7645f53e46f2ad7f92f81d4e50a602cc
+  transcript_file: interviews/transcripts/startups/Startup_Alec Dickinson_20260508.md
+  source_type: transcript_markdown
+  interviewee: Alec Dickinson
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-05-08'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260520-amrish-macedo
+  source_version: sha256:8c2249999d4891b6adab3052209d568ab60c0f021e0e9d3ce33048707495ca12
+  transcript_file: interviews/transcripts/startups/Startup_Amrish Macedo_20260520.md
+  source_type: transcript_markdown
+  interviewee: Amrish Macedo
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-05-20'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260608-arnon
+  source_version: sha256:ec2e128b8ad9916c71a658f333cfeac4bddea6d8aa4a75364188bae824e011e7
+  transcript_file: interviews/transcripts/startups/Startup_Arnon_20260608.md
+  source_type: transcript_markdown
+  interviewee: Arnon
+  company: Arbio
+  company_type: startup_scaleup
+  interview_date: '2026-06-08'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260526-benhamin-jiang
+  source_version: sha256:3313d0df9ca423d3d82db32e95c70675cb00cf8f2166a4c7af3c41402f5b9c8e
+  transcript_file: interviews/transcripts/startups/Startup_Benhamin Jiang_20260526.md
+  source_type: transcript_markdown
+  interviewee: Benhamin Jiang
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-05-26'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260512-catalin-vieru
+  source_version: sha256:7327ee23aee643649688cc07699669fdf206ae7542147b6c48a7c56f6c8cd8e3
+  transcript_file: interviews/transcripts/startups/Startup_Catalin Vieru_20260512.md
+  source_type: transcript_markdown
+  interviewee: Catalin Vieru
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-05-12'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260507-charles-barton
+  source_version: sha256:a680c9d017582b2ddc3d0d6615192c17a3838bd968f55e80783a879cfca170c6
+  transcript_file: interviews/transcripts/startups/Startup_Charles Barton_20260507.md
+  source_type: transcript_markdown
+  interviewee: Charles Barton
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-05-07'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260601-cullen-brown
+  source_version: sha256:d48feb086e2b1fdcc32beeb65928cc3f497039103666d755b4d413f6a3582312
+  transcript_file: interviews/transcripts/startups/Startup_Cullen Brown_20260601.md
+  source_type: transcript_markdown
+  interviewee: Cullen Brown
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-06-01'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260601-daniel-guzman-follow-up
+  source_version: sha256:ab5090caf58a4bf7a683d0c201cbbc9291b9e89acc9d9ab44bc72319aa5685a2
+  transcript_file: interviews/transcripts/startups/Startup_Daniel Guzman Follow Up_20260601.md
+  source_type: transcript_markdown
+  interviewee: Daniel Guzman
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-06-01'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260522-daniel-guzman
+  source_version: sha256:be46f029fdffd9886d76a7e3dd41c45621dacf440a7930a0ad600235566d522b
+  transcript_file: interviews/transcripts/startups/Startup_Daniel Guzman_20260522.md
+  source_type: transcript_markdown
+  interviewee: Daniel Guzman
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-05-22'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260608-kal-gangavarapu
+  source_version: sha256:cf3da311bd5c8350c2dba6d9ee55eec87c475f188c30321f639f8314691a5adf
+  transcript_file: interviews/transcripts/startups/Startup_Kal Gangavarapu_20260608.md
+  source_type: transcript_markdown
+  interviewee: Kal Gangavarapu
+  company: JPMorgan Chase
+  company_type: enterprise_large_org
+  interview_date: '2026-06-08'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260609-kunal-datta-follow-up
+  source_version: sha256:65cb65a9e6951300fe1d73bc949f69efd66cc9b69d2aa584dace38257ee527a2
+  transcript_file: interviews/transcripts/startups/Startup_Kunal Datta Follow Up_20260609.md
+  source_type: transcript_markdown
+  interviewee: Kunal Datta
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-06-09'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260511-kunal-datta
+  source_version: sha256:deed1d9545b504635aa014ae4a25cb0dbe27003389fc6ecfe0c824cde23d4604
+  transcript_file: interviews/transcripts/startups/Startup_Kunal Datta_20260511.md
+  source_type: transcript_markdown
+  interviewee: Kunal Datta
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-05-11'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260522-mahesh
+  source_version: sha256:4da7ce6da107bb2a8ad5b221a477eb18b45188d57cc616ba08cab30b6d13f540
+  transcript_file: interviews/transcripts/startups/Startup_Mahesh_20260522.md
+  source_type: transcript_markdown
+  interviewee: Mahesh
+  company: Databricks
+  company_type: enterprise_large_org
+  interview_date: '2026-05-22'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260521-michael-bernstein-follow-up
+  source_version: sha256:a81b938d4b427b97e3670b648a66a338cb0c5be9b4982c110859c567cf1614c6
+  transcript_file: interviews/transcripts/startups/Startup_Michael Bernstein Follow
+    Up_20260521.md
+  source_type: transcript_markdown
+  interviewee: Michael Bernstein
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-05-21'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260512-michael-bernstein
+  source_version: sha256:f423355ec35af6d6426dd85391215a7e4989a212b47ab4455b5ec8fafbe35bdf
+  transcript_file: interviews/transcripts/startups/Startup_Michael Bernstein_20260512.md
+  source_type: transcript_markdown
+  interviewee: Michael Bernstein
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-05-12'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260601-mitchell-fierro
+  source_version: sha256:d219ba21c30046133c0f3a9b5285c8c919c9c04410092b67ffb3dc57506bef81
+  transcript_file: interviews/transcripts/startups/Startup_Mitchell Fierro_20260601.md
+  source_type: transcript_markdown
+  interviewee: Mitchell Fierro
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-06-01'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260603-nishith-sahu
+  source_version: sha256:8aa987735cb0e74ff323dd34539fb5dd0befb9b7a7d168ecf53ca6c523e4073a
+  transcript_file: interviews/transcripts/startups/Startup_Nishith Sahu_20260603.md
+  source_type: transcript_markdown
+  interviewee: Nishith Sahu
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-06-03'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260520-tyler-malone
+  source_version: sha256:f9e448d4dfb6972cfb0e2f36315b01309389624137e692f415dad76b2f0d7a36
+  transcript_file: interviews/transcripts/startups/Startup_Tyler Malone_20260520.md
+  source_type: transcript_markdown
+  interviewee: Tyler Malone
+  company: Satiri
+  company_type: startup_scaleup
+  interview_date: '2026-05-20'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260520-varun-shrimal
+  source_version: sha256:525d91999a0afed6904496c5c6fec802a35d5834cdc2325025d88a7fec3c933a
+  transcript_file: interviews/transcripts/startups/Startup_Varun Shrimal_20260520.md
+  source_type: transcript_markdown
+  interviewee: Varun Shrimal
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-05-20'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260514-vijay-devatha
+  source_version: sha256:399f167400fa0d59ef4e4daa8343d623c260f503792bec36acbd7076f0cd4f94
+  transcript_file: interviews/transcripts/startups/Startup_Vijay Devatha_20260514.md
+  source_type: transcript_markdown
+  interviewee: Vijay Devatha
+  company: unknown
+  company_type: mixed_or_unknown
+  interview_date: '2026-05-14'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1
+- source_id: src-startup-20260611-whoz
+  source_version: sha256:a3c8bf9cbfe37b58e10a6dcc10b9e3a690cb400be72236501578f05d9b664cfb
+  transcript_file: interviews/transcripts/startups/Startup_Whoz_20260611.md
+  source_type: transcript_markdown
+  interviewee: unknown
+  company: Whoz
+  company_type: mixed_or_unknown
+  interview_date: '2026-06-11'
+  parser_version: pending-parser-selection
+  extraction_run_id: pending-extraction
+  corpus_snapshot_id: frontier-corpus-2026-06-11-v1

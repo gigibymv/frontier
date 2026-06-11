@@ -1,0 +1,9 @@
+allowed_values:
+  - Infrastructure
+  - Platform
+  - Operating Capabilities
+
+notes:
+  - These are the only allowed top-level pillar labels.
+  - The second pillar should be labeled Platform in live usage.
+  - Historical alias notes may mention `harness` only as a retired label.

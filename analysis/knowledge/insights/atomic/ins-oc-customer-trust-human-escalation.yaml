@@ -1,0 +1,52 @@
+insight_id: ins-oc-customer-trust-human-escalation
+title: Human escalation is retained to protect customer trust
+pillar: Operating Capabilities
+dimension: Judgment and Accountability
+claim_type: descriptive
+maturity_level: m1
+summary: >
+  Two startup interviews retain human involvement in customer-facing AI because
+  trust and edge-case judgment matter: one keeps a visible talk-to-human path in
+  the product experience, and another explicitly preserves humans for exceptions
+  where accuracy and relationship risk outweigh cost savings.
+
+evidence_status: direct_quote_anchored
+synthesis_status: draft
+scorecard_status: blocked_pending_human_review
+deck_status: blocked_pending_human_review
+
+weighted_support:
+  supporting_quote_span_count: 2
+  supporting_source_count: 2
+  contradicting_source_count: 0
+  weighted_support_score: 0.69
+  confidence_note: Two direct sources tie retained human involvement to customer trust, exception handling, and relationship risk.
+
+source_links:
+  - source_id: src-startup-20260514-vijay-devatha
+    source_version: sha256:399f167400fa0d59ef4e4daa8343d623c260f503792bec36acbd7076f0cd4f94
+    transcript_file: interviews/transcripts/startups/Startup_Vijay Devatha_20260514.md
+    quote_span_ids:
+      - qsp-vijay-human-button-trust-20260514-001
+  - source_id: src-startup-20260608-kal-gangavarapu
+    source_version: sha256:cf3da311bd5c8350c2dba6d9ee55eec87c475f188c30321f639f8314691a5adf
+    transcript_file: interviews/transcripts/startups/Startup_Kal Gangavarapu_20260608.md
+    quote_span_ids:
+      - qsp-kal-customer-trust-edge-cases-20260608-001
+
+caveats:
+  - One source is a UX-level fallback pattern, while the second is a broader operating stance about keeping humans on edge cases.
+  - The evidence establishes a trust-and-exception rationale, not a standardized escalation operating model.
+
+contradiction_links: []
+
+human_review:
+  state: pending
+  reviewer: null
+  last_reviewed: null
+  decision_note: Preserve as a narrow trust-protection pattern until another transcript confirms a similar rule.
+
+provenance:
+  created_by: codex-hardening-pass
+  created_at: 2026-06-11
+  updated_at: 2026-06-11

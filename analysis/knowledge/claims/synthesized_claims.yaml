@@ -1,0 +1,238 @@
+schema_version: 0.1
+promotion_rule: A synthesized claim must stay below scorecard or slide promotion until a human reviewer marks it ready.
+
+claims:
+  - claim_id: clm-oc-context-ownership-emerging-role
+    claim_type: descriptive
+    pillar: Operating Capabilities
+    dimension: Judgment and Accountability
+    statement: >
+      Context ownership is emerging as a named governance role for maintaining the freshness
+      and approval boundary of AI context in at least one large-organization example.
+    based_on_atomic_insights:
+      - ins-oc-context-ownership-role
+    evidence_grade: B
+    maturity_level: m1
+    synthesis_status: draft
+    scorecard_ready: false
+    slide_ready: false
+    human_gate:
+      required_before:
+        - scorecard_ready
+        - slide_ready
+      review_state: pending
+      reviewer: null
+      last_reviewed: null
+      unresolved_issues:
+        - Need a second substantive source before broader promotion.
+    linked_concepts:
+      - context-ownership
+
+  - claim_id: clm-oc-token-budgeting-by-use-case
+    claim_type: scorecard_candidate
+    pillar: Operating Capabilities
+    dimension: AI Economics and Capacity Management
+    statement: >
+      In the current corpus, some large organizations govern AI consumption through
+      use-case-specific budgeting and rollout gates rather than a single undifferentiated token policy.
+    based_on_atomic_insights:
+      - ins-oc-token-budgeting-by-use-case
+    evidence_grade: B
+    maturity_level: m2
+    synthesis_status: draft
+    scorecard_ready: false
+    slide_ready: false
+    human_gate:
+      required_before:
+        - scorecard_ready
+        - slide_ready
+      review_state: pending
+      reviewer: null
+      last_reviewed: null
+      unresolved_issues:
+        - Evidence breadth is still limited.
+        - Need explicit scoring guidance before conversion into a benchmark item.
+    linked_concepts:
+      - token-economics
+
+  - claim_id: clm-oc-accountability-based-human-control
+    claim_type: descriptive
+    pillar: Operating Capabilities
+    dimension: Judgment and Accountability
+    statement: >
+      Human control is most defensible in the corpus when it is tied to accountable
+      ownership, customer trust, outbound approval gates, or high-risk write access,
+      rather than applied uniformly to all AI-assisted work.
+    based_on_atomic_insights:
+      - ins-oc-human-accountability-hitl-rule
+      - ins-oc-customer-trust-human-escalation
+      - ins-oc-customer-facing-human-approval-gates
+      - ins-oc-permissioned-read-only-agent-access
+    evidence_grade: B
+    maturity_level: m2
+    synthesis_status: draft
+    scorecard_ready: false
+    slide_ready: false
+    human_gate:
+      required_before:
+        - scorecard_ready
+        - slide_ready
+      review_state: pending
+      reviewer: null
+      last_reviewed: null
+      unresolved_issues:
+        - Needs review to separate customer-facing controls from internal permissioning controls.
+        - Should not be converted into a universal HITL rule without workflow-specific wording.
+    linked_concepts:
+      - human-accountability-boundary
+
+  - claim_id: clm-oc-ai-fluency-as-threshold
+    claim_type: descriptive
+    pillar: Operating Capabilities
+    dimension: Talent Readiness
+    statement: >
+      Several anchored operating-capabilities insights point toward AI fluency becoming
+      a threshold capability: engineering work shifts toward orchestration, role
+      evaluation includes future-proofing, and performance discussions increasingly
+      distinguish basic tool use from meaningful AI adaptiveness.
+    based_on_atomic_insights:
+      - ins-oc-agent-orchestration-skill
+      - ins-oc-future-proof-role-evaluation
+      - ins-oc-ai-adaptiveness-performance-threshold
+    evidence_grade: B
+    maturity_level: m2
+    synthesis_status: draft
+    scorecard_ready: false
+    slide_ready: false
+    human_gate:
+      required_before:
+        - scorecard_ready
+        - slide_ready
+      review_state: pending
+      reviewer: null
+      last_reviewed: null
+      unresolved_issues:
+        - Evidence combines engineering, hiring, and performance-management contexts.
+        - Needs wording discipline before use as a benchmark item.
+    linked_concepts:
+      - agentic-orchestration
+
+  - claim_id: clm-oc-workflow-owners-build-local-automations
+    claim_type: descriptive
+    pillar: Operating Capabilities
+    dimension: Review and Learning Culture
+    statement: >
+      The corpus supports a narrow pattern in which workflow owners or non-technical
+      staff originate role-specific automations, while reuse currently appears as
+      local sharing or repository-based propagation rather than a proven broad
+      marketplace dynamic.
+    based_on_atomic_insights:
+      - ins-oc-self-service-automation-origin
+      - ins-oc-nonengineers-build-role-specific-tools
+      - ins-oc-local-plugin-repo-workflow-sharing
+    evidence_grade: B
+    maturity_level: m1
+    synthesis_status: draft
+    scorecard_ready: false
+    slide_ready: false
+    human_gate:
+      required_before:
+        - scorecard_ready
+        - slide_ready
+      review_state: pending
+      reviewer: null
+      last_reviewed: null
+      unresolved_issues:
+        - The reuse portion remains mono-source and should not be described as a marketplace.
+        - Needs a second source before promotion beyond a narrow sharing pattern.
+    linked_concepts:
+      - workflow-reuse
+
+  - claim_id: clm-oc-platform-rails-preserve-engineering-boundaries
+    claim_type: descriptive
+    pillar: Operating Capabilities
+    dimension: Org Structure and Composition
+    statement: >
+      Non-engineers may produce useful internal tools, but the strongest anchored
+      evidence keeps deployment, runtime, network connection, and high-risk access
+      inside engineering-owned or permissioned platform rails.
+    based_on_atomic_insights:
+      - ins-oc-nonengineers-build-role-specific-tools
+      - ins-oc-platform-owned-deployment-rails
+      - ins-oc-permissioned-read-only-agent-access
+    evidence_grade: B
+    maturity_level: m1
+    synthesis_status: draft
+    scorecard_ready: false
+    slide_ready: false
+    human_gate:
+      required_before:
+        - scorecard_ready
+        - slide_ready
+      review_state: pending
+      reviewer: null
+      last_reviewed: null
+      unresolved_issues:
+        - Needs review to avoid overstating production-code autonomy for non-engineers.
+        - Should be mapped carefully between Operating Capabilities and Platform.
+    linked_concepts:
+      - platform-context-layer
+
+  - claim_id: clm-oc-role-shifts-redirect-human-work
+    claim_type: descriptive
+    pillar: Operating Capabilities
+    dimension: Org Structure and Composition
+    statement: >
+      The anchored role-change evidence is best framed as workflow-specific redirection
+      of human effort, not broad role elimination: CX capacity can move toward
+      cross-selling, legal/compliance work can shift toward checking AI summaries,
+      and operations status work can move from dashboards toward natural-language queries.
+    based_on_atomic_insights:
+      - ins-oc-cx-role-shift-cross-selling
+      - ins-oc-legal-review-shift-summary-check
+      - ins-oc-ops-work-shift-natural-language-queries
+    evidence_grade: C
+    maturity_level: m1
+    synthesis_status: draft
+    scorecard_ready: false
+    slide_ready: false
+    human_gate:
+      required_before:
+        - scorecard_ready
+        - slide_ready
+      review_state: pending
+      reviewer: null
+      last_reviewed: null
+      unresolved_issues:
+        - Each role-shift example is workflow-specific and mostly mono-source.
+        - Do not use this as evidence of generalized headcount reduction.
+    linked_concepts:
+      - role-redesign
+
+  - claim_id: clm-oc-experimentation-budget-governance
+    claim_type: descriptive
+    pillar: Operating Capabilities
+    dimension: AI Economics and Capacity Management
+    statement: >
+      One anchored case shows AI experimentation spend being ring-fenced from broader
+      rollout decisions, suggesting a governance distinction between exploration
+      budget and scaled production spend.
+    based_on_atomic_insights:
+      - ins-oc-ring-fenced-experimentation-budget
+    evidence_grade: C
+    maturity_level: m1
+    synthesis_status: draft
+    scorecard_ready: false
+    slide_ready: false
+    human_gate:
+      required_before:
+        - scorecard_ready
+        - slide_ready
+      review_state: pending
+      reviewer: null
+      last_reviewed: null
+      unresolved_issues:
+        - Mono-source evidence only.
+        - Needs corroboration before being treated as a recurring token-economics pattern.
+    linked_concepts:
+      - token-economics

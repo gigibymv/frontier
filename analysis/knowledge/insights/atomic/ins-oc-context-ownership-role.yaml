@@ -1,0 +1,46 @@
+insight_id: ins-oc-context-ownership-role
+title: Context ownership appears as an explicit governance pattern
+pillar: Operating Capabilities
+dimension: Judgment and Accountability
+claim_type: descriptive
+maturity_level: m1
+summary: >
+  One enterprise interview explicitly frames context ownership as an extension of metric
+  ownership, suggesting an emerging governance role for keeping context fresh and
+  approving changes.
+
+evidence_status: direct_quote_anchored
+synthesis_status: draft
+scorecard_status: blocked_pending_human_review
+deck_status: blocked_pending_human_review
+
+weighted_support:
+  supporting_quote_span_count: 1
+  supporting_source_count: 1
+  contradicting_source_count: 0
+  weighted_support_score: 0.42
+  confidence_note: Mono-source direct evidence; useful but not yet classifiable as a broad pattern.
+
+source_links:
+  - source_id: src-enterprise-20260611-dmitry-shkolnik
+    source_version: sha256:168f559f8b3205e41fcff5ab953ab6b94572002bad680f7876f6f181cfa47106
+    transcript_file: interviews/transcripts/enterprise/Enterprise_Dmitry Shkolnik_20260611.md
+    quote_span_ids:
+      - qsp-dmitry-context-ownership-20260611-001
+
+caveats:
+  - Current support is mono-source.
+  - The interview names the role logic clearly, but the operating model is still described as in-progress.
+
+contradiction_links: []
+
+human_review:
+  state: pending
+  reviewer: null
+  last_reviewed: null
+  decision_note: Keep as an anchored emerging pattern until a second substantive source appears.
+
+provenance:
+  created_by: codex-bootstrap
+  created_at: 2026-06-11
+  updated_at: 2026-06-11

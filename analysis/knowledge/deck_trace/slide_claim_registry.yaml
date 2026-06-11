@@ -1,0 +1,824 @@
+schema_version: 0.1
+purpose: Every deck-level claim should be traceable to upstream research objects and reviewed risk.
+
+required_fields:
+  - slide_id
+  - slide_claim_id
+  - claim_id
+  - evidence_grade
+  - risk_level
+  - owner
+  - last_reviewed
+  - unresolved_issue
+
+slide_claims:
+  - slide_id: deck-checkin4-slide-23
+    slide_claim_id: sclm-deck-checkin4-slide23-context-curation
+    claim_id: clm-oc-context-ownership-emerging-role
+    deck_claim_excerpt: >
+      AI-forward firms still manually curate context collections for agents.
+    evidence_grade: B
+    risk_level: high
+    owner: worker-b
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Upstream support is narrower than the slide wording. The linked claim is mono-source,
+      enterprise-specific, and still draft; this slide also mixes in deck-only context-refresh
+      examples that remain unverified.
+  - slide_id: deck-checkin4-slide-30
+    slide_claim_id: sclm-deck-checkin4-slide30-platform-deployment-rails
+    claim_id: unresolved
+    upstream_atomic_insight_id: ins-oc-platform-owned-deployment-rails
+    deck_claim_excerpt: >
+      Internal platform wraps Claude Code to retire low-code tools and enable citizen developers.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-b
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The atomic support is mono-source and narrower than the case-study slide. The deck framing
+      adds broader adoption, governance, and outcome claims that are not yet represented in an
+      upstream synthesized claim.
+  - slide_id: deck-checkin4-slide-34
+    slide_claim_id: sclm-deck-checkin4-slide34-engineer-orchestrator-role
+    claim_id: unresolved
+    upstream_atomic_insight_id: ins-oc-agent-orchestration-skill
+    deck_claim_excerpt: >
+      Coding is a commodity, engineers have to be orchestrators.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-b
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The linked atomic insight supports a narrow role-shift pattern, but the slide wraps that
+      signal into a broader case-study narrative with additional hiring and outcome claims that
+      have not been promoted upstream.
+  - slide_id: deck-checkin4-slide-40
+    slide_claim_id: sclm-deck-checkin4-slide40-accountability-review-junction
+    claim_id: unresolved
+    upstream_atomic_insight_id: ins-oc-human-accountability-hitl-rule
+    deck_claim_excerpt: >
+      Defined junction of output review by human vs multiple or other LLMs.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-b
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The upstream support establishes accountability-driven human review, not a standardized
+      multi-stage review architecture. The slide wording is stronger and broader than the current
+      transcript-backed objects.
+  - slide_id: deck-checkin4-slide-40
+    slide_claim_id: sclm-deck-checkin4-slide40-ai-fluency-hiring-threshold
+    claim_id: unresolved
+    upstream_atomic_insight_id: ins-oc-future-proof-role-evaluation
+    deck_claim_excerpt: >
+      AI fluency requirement for candidates and recruiters.
+    evidence_grade: B
+    risk_level: high
+    owner: worker-b
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The available upstream object supports future-proof role evaluation in one enterprise hiring
+      regime, not a broader cross-firm candidate and recruiter requirement. This remains below
+      any slide-promotion threshold.
+  - slide_id: deck-checkin4-slide-40
+    slide_claim_id: sclm-deck-checkin4-slide40-token-burn-value-realization
+    claim_id: clm-oc-token-budgeting-by-use-case
+    deck_claim_excerpt: >
+      Limit token burn until definitive value realization.
+    evidence_grade: B
+    risk_level: high
+    owner: worker-b
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The linked claim supports segmented budgeting and rollout gates, but not this stronger
+      value-realization rule. The slide should be treated as an interpretive deck claim, not as a
+      verified research object.
+  - slide_id: deck-checkin4-slide-29
+    slide_claim_id: sclm-deck-checkin4-slide29-agent-dev-redefines-engineer-role
+    claim_id: unresolved
+    upstream_atomic_insight_id: ins-oc-agent-orchestration-skill
+    deck_claim_excerpt: >
+      Agent-based software development is reducing hands-on engineering effort and redefines the
+      engineer role around orchestration and oversight.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Daniel Guzman supports the role shift toward orchestration, but the deck line adds a broader
+      labor-allocation claim about reduced hands-on effort that is not yet promoted upstream.
+  - slide_id: deck-checkin4-slide-29
+    slide_claim_id: sclm-deck-checkin4-slide29-ticket-orchestrator-semantic-layer
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Ticket triggers orchestrator agent in isolated repo / VM environment; the agent triages on
+      ticket, context, and a Sentry / Grafana / Jira / MCP semantic layer.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Transcript support exists for isolated repos, Sentry, Grafana, and internal MCP context, but
+      the semantic-layer phrasing is deck synthesis rather than an upstream claim object.
+  - slide_id: deck-checkin4-slide-29
+    slide_claim_id: sclm-deck-checkin4-slide29-composer-agent-opens-pr
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Composer agent goes to the relevant repo, proposes code, and opens a PR.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The Daniel workflow supports code-generation agents producing PRs, but the specific
+      composer-agent decomposition is still deck wording.
+  - slide_id: deck-checkin4-slide-29
+    slide_claim_id: sclm-deck-checkin4-slide29-human-pr-review
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Humans conduct GitHub PR review.
+    evidence_grade: B
+    risk_level: low
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Direct transcript support exists for human PR review before merge, but the statement has not
+      yet been promoted into a synthesized claim.
+  - slide_id: deck-checkin4-slide-29
+    slide_claim_id: sclm-deck-checkin4-slide29-low-risk-automerge-plan
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      The company plans to move low-risk PRs into auto-merge and route high-risk PRs to engineers.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      This is an interview-backed aspiration in Daniel's workflow, not a confirmed current-state
+      operating practice.
+  - slide_id: deck-checkin4-slide-29
+    slide_claim_id: sclm-deck-checkin4-slide29-mcps-skills-standard-tool-layer
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      MCPs and skills act as a standardized tool layer across systems, with function documents
+      accessible by agents.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The transcript supports internal MCPs and markdown skills, but the standardized tool-layer
+      framing remains a deck-level synthesis.
+  - slide_id: deck-checkin4-slide-29
+    slide_claim_id: sclm-deck-checkin4-slide29-hiring-hallucination-detection
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Hiring is evolving to focus on an AI-specific skillset, including the ability to identify
+      hallucinations and redesigned engineering interviews.
+    evidence_grade: C
+    risk_level: high
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Daniel does describe hiring for agent orchestration and hallucination identification, but the
+      deck combines multiple hiring and interview-process claims that are not yet represented as
+      upstream research objects.
+  - slide_id: deck-checkin4-slide-29
+    slide_claim_id: sclm-deck-checkin4-slide29-bug-fix-cycle-hour
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Bug-fix cycle time fell from 1-2 days to about 1 hour.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The interview synthesis records this metric for Daniel, but the metric has not yet been
+      promoted into an upstream claim entry.
+  - slide_id: deck-checkin4-slide-29
+    slide_claim_id: sclm-deck-checkin4-slide29-solo-engineer-squads
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Squad teams of 3-4 engineers plus QAs are being replaced by solo engineers.
+    evidence_grade: D
+    risk_level: high
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The deck states a staffing replacement claim stronger than the current transcript-backed
+      summary. Treat as deck interpretation until re-sourced.
+  - slide_id: deck-checkin4-slide-29
+    slide_claim_id: sclm-deck-checkin4-slide29-fde-solution-engineering-growth
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Engineering headcount growth slowed while forward-deployment and solution-engineering roles
+      are growing instead.
+    evidence_grade: D
+    risk_level: high
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      This staffing-mix claim does not map to a current upstream object and is stronger than the
+      transcript-backed role-shift evidence presently registered.
+  - slide_id: deck-checkin4-slide-30
+    slide_claim_id: sclm-deck-checkin4-slide30-platform-replaces-retool
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      An internal platform stitched from AWS building blocks replaces Retool.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Mitchell directly supports progressive Retool replacement, but this exact phrasing has not
+      been promoted into the knowledge layer.
+  - slide_id: deck-checkin4-slide-30
+    slide_claim_id: sclm-deck-checkin4-slide30-skill-file-points-stack
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      A skill file points Claude Code at the company stack, including UI components, technologies,
+      deployment targets, and registration details.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The interview supports stack-specific guidance and internal platform logic, but this exact
+      skill-file inventory is deck condensation rather than a registered claim.
+  - slide_id: deck-checkin4-slide-30
+    slide_claim_id: sclm-deck-checkin4-slide30-gateway-permissioned-access
+    claim_id: unresolved
+    upstream_atomic_insight_id: ins-oc-platform-owned-deployment-rails
+    deck_claim_excerpt: >
+      A gateway service brokers granular, permissioned access to Salesforce, Zendesk, Datadog,
+      internal APIs, S3, Drive, and related systems.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Mitchell supports permissioned platform-owned access, but the full system list and gateway
+      framing remain deck-specific enumeration.
+  - slide_id: deck-checkin4-slide-30
+    slide_claim_id: sclm-deck-checkin4-slide30-no-company-wide-brain
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      There is no company-wide brain or memory; teams run their own ad-hoc memory.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Mitchell explicitly discusses an unresolved company-brain problem, but the ad-hoc-memory
+      generalization is broader than the current registered evidence.
+  - slide_id: deck-checkin4-slide-30
+    slide_claim_id: sclm-deck-checkin4-slide30-nonengineers-build-internal-apps
+    claim_id: unresolved
+    upstream_atomic_insight_id: ins-oc-nonengineers-build-role-specific-tools
+    deck_claim_excerpt: >
+      Non-engineers use Claude Code to build internal apps such as dashboards, automations, and
+      point solutions.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Transcript support exists for non-technical staff building role-specific internal tools, but
+      the deck line is broader than the current atomic insight wording.
+  - slide_id: deck-checkin4-slide-30
+    slide_claim_id: sclm-deck-checkin4-slide30-platform-deploys-internal-vpn
+    claim_id: unresolved
+    upstream_atomic_insight_id: ins-oc-platform-owned-deployment-rails
+    deck_claim_excerpt: >
+      Claude submits an app to an internal registry, and the platform deploys it on AWS for access
+      over the internal VPN.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Mitchell supports engineering-owned deployment/runtime rails, but the registry-to-VPN flow is
+      not yet captured as an upstream object.
+  - slide_id: deck-checkin4-slide-30
+    slide_claim_id: sclm-deck-checkin4-slide30-no-formal-review
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Employees build what they want with no formal review.
+    evidence_grade: D
+    risk_level: high
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      This overstates the transcript. Mitchell describes self-service building on governed rails,
+      not unrestricted autonomy without review or platform controls.
+  - slide_id: deck-checkin4-slide-30
+    slide_claim_id: sclm-deck-checkin4-slide30-retool-dependence-to-zero
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Retool dependence is going to zero, and BI tools such as Tableau and Superset are on a
+      similar path.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Retool reduction is supported, but the extrapolation to BI-tool trajectories is still a
+      deck-only forward claim.
+  - slide_id: deck-checkin4-slide-30
+    slide_claim_id: sclm-deck-checkin4-slide30-central-observability
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Engineering gains full visibility and observability because every app's source code, usage,
+      and access path is centrally managed.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The transcript supports observability into usage and centrally managed deployment, but this
+      fuller visibility claim remains deck synthesis.
+  - slide_id: deck-checkin4-slide-31
+    slide_claim_id: sclm-deck-checkin4-slide31-ai-native-context-operating-model
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      An AI-native operating model grounded in shared context transforms workflows and culture
+      across teams.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      Slide 31's Chief Product Officer case-study content maps back to Kunal Datta's transcript,
+      but the transformation framing is still broad deck synthesis rather than a quote-backed
+      upstream claim object.
+  - slide_id: deck-checkin4-slide-31
+    slide_claim_id: sclm-deck-checkin4-slide31-shared-notion-brain
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      A shared Notion document acts as a routing brain for Claude, pointing to tools and internal
+      knowledge.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      The speaker attribution is cleanly supported by Kunal Datta's transcript, but the brain
+      pattern has not yet been promoted into the formal knowledge layer.
+  - slide_id: deck-checkin4-slide-31
+    slide_claim_id: sclm-deck-checkin4-slide31-leaders-maintain-brain
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Business-unit leaders maintain brain sections based on Claude suggestions.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      Kunal Datta describes leaders refining their own brain sections, but the practice is not yet
+      represented as an upstream atomic insight.
+  - slide_id: deck-checkin4-slide-31
+    slide_claim_id: sclm-deck-checkin4-slide31-daily-brain-cleanup
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Daily cleanup trims the brain.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      Kunal Datta describes recurring and daily brain-maintenance behavior, but prior audit history
+      tied similar cadence language to Amrish Macedo, so this row should keep the cadence caveat
+      explicit on reuse.
+  - slide_id: deck-checkin4-slide-31
+    slide_claim_id: sclm-deck-checkin4-slide31-gated-nonengineer-shipping
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      PMs, designers, and other non-engineers ship code through a gated process with product
+      review, TDD review, tool review, and human sign-off.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      Kunal Datta supports the non-engineer shipping pattern, but the exact gate sequence remains
+      deck packaging and not yet an upstream claim object.
+  - slide_id: deck-checkin4-slide-31
+    slide_claim_id: sclm-deck-checkin4-slide31-managers-ic-weekly
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      All managers are expected to IC with AI and ship something to users every week.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      This directly matches Kunal Datta's transcript. The remaining issue is historical
+      misattribution in earlier audit notes, not a current lack of transcript support.
+  - slide_id: deck-checkin4-slide-31
+    slide_claim_id: sclm-deck-checkin4-slide31-domain-knowledge-reduced
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Domain knowledge matters less because people can ask the brain and shorten onboarding.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      The speaker attribution is supported by Kunal Datta's transcript, but the deck wording is
+      still stronger than his actual nuance about reduced onboarding dependence.
+  - slide_id: deck-checkin4-slide-31
+    slide_claim_id: sclm-deck-checkin4-slide31-ae-csm-load-multiplier
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      AEs and CSMs handle about 2-3 times their prior load.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      The metric is attributable to Kunal Datta in the interview material, but it is not yet
+      promoted into a formal knowledge object.
+  - slide_id: deck-checkin4-slide-31
+    slide_claim_id: sclm-deck-checkin4-slide31-design-preempts-beta-issues
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Design preempts basically 90 percent of beta issues before user calls.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      The quantified design-preemption claim is attributable to Kunal Datta, but it is not yet
+      represented upstream as a formal claim object.
+  - slide_id: deck-checkin4-slide-31
+    slide_claim_id: sclm-deck-checkin4-slide31-connect-everything-bounded-pii
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Broad tool access is encouraged as long as there is no customer data; connect everything to
+      Claude when PII boundaries permit it.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      This matches Kunal Datta's quote closely, but the deck compresses it into a generalized
+      governance rule that is not yet registered upstream.
+  - slide_id: deck-checkin4-slide-32
+    slide_claim_id: sclm-deck-checkin4-slide32-repo-native-context-proactive-ops
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Repo-native context turns feedback, tests, and code review into proactive engineering
+      operations.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      The VP of AI Engineering case-study content maps to Michael Bernstein's transcript, but this
+      summary line remains deck synthesis rather than an upstream claim.
+  - slide_id: deck-checkin4-slide-32
+    slide_claim_id: sclm-deck-checkin4-slide32-ai-triage-patch-ready
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Feedback and testing trigger AI triage, and suspected bugs surface with ready-to-review
+      patches.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      Michael Bernstein's transcript supports the report-to-patch workflow in substance, but this
+      exact sentence has not been promoted upstream.
+  - slide_id: deck-checkin4-slide-32
+    slide_claim_id: sclm-deck-checkin4-slide32-temporal-workflows
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Temporal is used to build workflows and manage state across multi-stage agentic workflows.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      This is attributable to Michael Bernstein and directly supported in the interview material,
+      but it is not yet represented as a promoted atomic insight or claim.
+  - slide_id: deck-checkin4-slide-32
+    slide_claim_id: sclm-deck-checkin4-slide32-monorepo-markdown-context
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Monorepo markdown serves as the context layer for engineering work, and CLAUDE.md points
+      models to scenario-specific agent docs, examples, and do/don't guidance.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      Michael Bernstein supports the monorepo context pattern and CLAUDE.md guidance structure, but
+      the combined sentence has not yet been decomposed into upstream knowledge objects.
+  - slide_id: deck-checkin4-slide-32
+    slide_claim_id: sclm-deck-checkin4-slide32-file-pointers-over-large-rag
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Ground truth is delivered just in time through file pointers instead of through a large RAG
+      index.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      The speaker attribution is supported by Michael Bernstein's transcript, but the
+      file-pointers-versus-RAG wording remains deck interpretation rather than transcript language.
+  - slide_id: deck-checkin4-slide-32
+    slide_claim_id: sclm-deck-checkin4-slide32-just-in-time-software
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      People build just-in-time software for immediate problems, even if it is thrown away within
+      a few months, because that is easier than buying SaaS for the interim need.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      This is directly attributable to Michael Bernstein, but it has not yet been promoted into the
+      claim layer.
+  - slide_id: deck-checkin4-slide-32
+    slide_claim_id: sclm-deck-checkin4-slide32-personalized-upskilling-claude-subscription
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      The company supports higher Claude subscription tiers so employees can learn in spare time,
+      including a data scientist who built a side-project video game and now commits production
+      code with Claude Code.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      This anecdote is supported in Michael Bernstein's transcript. The remaining issue is prior
+      speaker-noise in earlier audits, not current attribution uncertainty.
+  - slide_id: deck-checkin4-slide-32
+    slide_claim_id: sclm-deck-checkin4-slide32-vibe-coded-instead-of-purchased
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Software for individual problems can be vibe-coded instead of purchased.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      Michael Bernstein supports short-lived internal tools as a substitute for buying SaaS in some
+      cases, but this compressed deck phrasing is not an upstream claim.
+  - slide_id: deck-checkin4-slide-33
+    slide_claim_id: sclm-deck-checkin4-slide33-plan-led-ai-executed-human-approved
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Engineering remains in control of planning, review, and deployment while AI agents increase
+      volume and velocity through a plan-led, AI-executed, human-approved workflow.
+    evidence_grade: D
+    risk_level: high
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      The Senior Director Engineering case-study content maps back to Vijay Devatha's transcript.
+      The row still sits inside a mixed-source slide, so reuse should preserve that slide-level
+      contamination caveat.
+  - slide_id: deck-checkin4-slide-33
+    slide_claim_id: sclm-deck-checkin4-slide33-planmd-before-build
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Engineers spend 3-5 days writing a plan.md before AI builds the implementation use case by
+      use case under engineer review.
+    evidence_grade: E
+    risk_level: high
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      Vijay Devatha clearly supports plan.md review before implementation, but the 3-5 day duration
+      remains unsupported deck compression and should not be treated as a quote-backed detail.
+  - slide_id: deck-checkin4-slide-33
+    slide_claim_id: sclm-deck-checkin4-slide33-ai-review-human-merge
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      AI handles first-pass code review while humans still do targeted line-by-line review and own
+      all merge and production-deploy decisions.
+    evidence_grade: D
+    risk_level: high
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      Vijay Devatha supports the human review and merge/deploy control points. The unresolved issue
+      is sentence compression, not current speaker ambiguity.
+  - slide_id: deck-checkin4-slide-33
+    slide_claim_id: sclm-deck-checkin4-slide33-designers-pms-self-prototype
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Designers and PMs self-prototype.
+    evidence_grade: D
+    risk_level: high
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      Vijay Devatha explicitly supports PM and designer prototyping, but the bullet still appears
+      inside a slide whose neighboring bullets are mixed-source.
+  - slide_id: deck-checkin4-slide-33
+    slide_claim_id: sclm-deck-checkin4-slide33-weekly-ai-doctor
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      A weekly AI Doctor meeting surfaces wins, mistakes, and best practices.
+    evidence_grade: E
+    risk_level: high
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: likely contaminated / should not reuse without resourcing
+    unresolved_issue: >
+      The operating-capabilities hallucination check marked the Charles Barton AI Doctor claim as
+      not found, and slide 33 mixes it into an otherwise Vijay-aligned case study. Do not reuse
+      without re-sourcing.
+  - slide_id: deck-checkin4-slide-33
+    slide_claim_id: sclm-deck-checkin4-slide33-scoped-context-tiered-access
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Per-agent scoped context and tiered access are used for token efficiency.
+    evidence_grade: D
+    risk_level: high
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      Vijay Devatha supports the component parts here: plan.md plus skills-based context routing,
+      per-agent context separation, and token-tier governance. The unresolved issue is that the
+      sentence is still a deck-level synthesis rather than an upstream object.
+  - slide_id: deck-checkin4-slide-33
+    slide_claim_id: sclm-deck-checkin4-slide33-token-tier-upgrades
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Engineers are placed in token tiers, with manager approval required to move from a lower cap
+      to a higher tier.
+    evidence_grade: E
+    risk_level: high
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      Vijay Devatha directly describes the tiered token model. The remaining issue is correction of
+      prior Charles Barton misattribution, not current lack of support.
+  - slide_id: deck-checkin4-slide-33
+    slide_claim_id: sclm-deck-checkin4-slide33-n-plus-one-replication
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      AI replicated an N+1 query hundreds of times, causing severe latency issues and incidents.
+    evidence_grade: E
+    risk_level: high
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: likely contaminated / should not reuse without resourcing
+    unresolved_issue: >
+      The hallucination audit marked the Charles Barton N+1 anecdote as not found, and there is no
+      safe Vijay transcript anchor for the slide-33 bullet. Do not reuse without re-sourcing.
+  - slide_id: deck-checkin4-slide-33
+    slide_claim_id: sclm-deck-checkin4-slide33-pr-rate-jump
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      PR creation rate increased from 1-3 PRs per engineer per week to 3-5 PRs per engineer per
+      day.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      This metric is directly supported by Vijay Devatha's transcript, but it appears beside
+      contaminated slide-33 bullets and should keep that slide-level caveat attached.
+  - slide_id: deck-checkin4-slide-33
+    slide_claim_id: sclm-deck-checkin4-slide33-one-engineer-within-sprint
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Feature timelines moved from 3-6 months with a pizza-size team to 1 engineer within a
+      sprint.
+    evidence_grade: D
+    risk_level: high
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    attribution_status: transcript-supported attribution
+    unresolved_issue: >
+      Vijay Devatha supports the 3-6 months to one-engineer-within-sprints comparison. The deck's
+      singular 'within a sprint' wording is tighter than the transcript and should be kept
+      caveated.
+  - slide_id: deck-checkin4-slide-34
+    slide_claim_id: sclm-deck-checkin4-slide34-ticket-orchestrator-detailed-plan
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Ticket triggers an orchestrator agent that gathers diagnostics, fetches code, consults
+      internal docs, drafts an implementation plan, and hands the plan to another agent that opens
+      a PR for human review.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Daniel supports ticket-triggered orchestration and human-reviewed PRs, but the fuller
+      multi-stage planning handoff is deck condensation rather than an upstream claim.
+  - slide_id: deck-checkin4-slide-34
+    slide_claim_id: sclm-deck-checkin4-slide34-custom-mcps-fresh-context
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Custom MCPs provide proprietary context, there is no global context window, and the
+      orchestrator pulls fresh context per ticket from relevant MCPs.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The transcript supports custom MCPs and fresh retrieval from connected systems, but the
+      no-global-context-window framing is still deck synthesis.
+  - slide_id: deck-checkin4-slide-34
+    slide_claim_id: sclm-deck-checkin4-slide34-shared-skills-local-cloud
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      A shared skills library runs in both local Cursor sessions and cloud background agents.
+    evidence_grade: C
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Daniel describes reusable markdown skills, but this local-plus-cloud runtime packaging has
+      not been promoted upstream.
+  - slide_id: deck-checkin4-slide-34
+    slide_claim_id: sclm-deck-checkin4-slide34-post-merge-learning-loop
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Every fix pushes its context back into the relevant skill so the next similar bug is
+      recognized faster.
+    evidence_grade: D
+    risk_level: high
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Current transcript support covers reusable skills, but not this explicit post-merge learning
+      loop. Treat as deck-only until re-sourced.
+  - slide_id: deck-checkin4-slide-34
+    slide_claim_id: sclm-deck-checkin4-slide34-hiring-hallucination-detection
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Hiring includes a new AI-specific skillset, including the ability to identify hallucinations.
+    evidence_grade: B
+    risk_level: high
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Daniel directly names hallucination identification in hiring, but the slide still needs a
+      narrower upstream object before reuse as verified deck evidence.
+  - slide_id: deck-checkin4-slide-34
+    slide_claim_id: sclm-deck-checkin4-slide34-bug-fix-cycle-hour
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Bug-fix cycle time fell from 1-2 days to about 1 hour.
+    evidence_grade: B
+    risk_level: medium
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Supported in the Daniel interview synthesis, but not yet promoted into the claim layer.
+  - slide_id: deck-checkin4-slide-34
+    slide_claim_id: sclm-deck-checkin4-slide34-solo-squads
+    claim_id: unresolved
+    deck_claim_excerpt: >
+      Squad teams of 3-4 engineers plus QAs are replaced by solo engineers.
+    evidence_grade: D
+    risk_level: high
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      This outcome claim remains stronger than the current transcript-backed staffing evidence and
+      should not be reused without direct re-sourcing.
+
+template:
+  slide_id: slide-00
+  slide_claim_id: sclm-example
+  claim_id: clm-example
+  evidence_grade: B
+  risk_level: medium
+  owner: unassigned
+  last_reviewed: null
+  unresolved_issue: Replace with the current risk or set to none after review.

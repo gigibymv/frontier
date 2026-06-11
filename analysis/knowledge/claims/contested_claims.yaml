@@ -1,0 +1,20 @@
+schema_version: 0.1
+purpose: Track claims with material disagreement, weak support, or explicit counter-evidence.
+
+contested_claims: []
+
+template:
+  contested_claim_id: cclm-example
+  upstream_claim_id: clm-example
+  contest_reason: contradictory_evidence
+  status: open
+  supporting_records:
+    - ins-example-a
+  contradicting_records:
+    - ins-example-b
+  human_gate:
+    review_state: pending
+    reviewer: null
+    last_reviewed: null
+    unresolved_issues:
+      - Replace with the exact dispute.

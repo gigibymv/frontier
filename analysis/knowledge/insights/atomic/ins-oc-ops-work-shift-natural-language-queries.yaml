@@ -1,0 +1,45 @@
+insight_id: ins-oc-ops-work-shift-natural-language-queries
+title: Operations status work shifts from dashboards to natural-language queries
+pillar: Operating Capabilities
+dimension: Org Structure and Composition
+claim_type: descriptive
+maturity_level: m1
+summary: >
+  One transcript describes an operations workflow moving from dashboard building
+  and warehouse querying toward natural-language interaction with an AI chatbot.
+
+evidence_status: direct_quote_anchored
+synthesis_status: draft
+scorecard_status: blocked_pending_human_review
+deck_status: blocked_pending_human_review
+
+weighted_support:
+  supporting_quote_span_count: 1
+  supporting_source_count: 1
+  contradicting_source_count: 0
+  weighted_support_score: 0.45
+  confidence_note: Clean workflow-specific wording, but still mono-source.
+
+source_links:
+  - source_id: src-startup-20260514-vijay-devatha
+    source_version: sha256:399f167400fa0d59ef4e4daa8343d623c260f503792bec36acbd7076f0cd4f94
+    transcript_file: interviews/transcripts/startups/Startup_Vijay Devatha_20260514.md
+    quote_span_ids:
+      - qsp-vijay-ops-natural-language-shift-20260514-001
+
+caveats:
+  - Current support is mono-source.
+  - The quote shows a workflow-interface shift, not a headcount-elimination claim.
+
+contradiction_links: []
+
+human_review:
+  state: pending
+  reviewer: null
+  last_reviewed: null
+  decision_note: Keep as a narrow operations workflow shift until another transcript confirms a comparable transition.
+
+provenance:
+  created_by: codex-atomic-evidence-pass
+  created_at: 2026-06-11
+  updated_at: 2026-06-11

@@ -1,0 +1,21 @@
+schema_version: 0.1
+purpose: Candidate claims that have passed synthesis review and are being considered for benchmark scoring logic.
+
+requirements:
+  - scorecard claims must reference a synthesized claim id
+  - scorecard claims require a named human approver
+  - no item may be treated as scorecard-ready while review_state is pending
+
+scorecard_claims: []
+
+template:
+  claim_id: clm-example
+  synthesized_claim_id: clm-upstream
+  scoring_prompt: Replace with a scoring-ready formulation.
+  evidence_grade: B
+  human_gate:
+    review_state: pending
+    reviewer: null
+    last_reviewed: null
+    unresolved_issues:
+      - Replace with specific open issue.

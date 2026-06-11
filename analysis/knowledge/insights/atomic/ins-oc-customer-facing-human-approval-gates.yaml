@@ -1,0 +1,52 @@
+insight_id: ins-oc-customer-facing-human-approval-gates
+title: Customer-facing outbound content retains explicit human approval before send
+pillar: Operating Capabilities
+dimension: Judgment and Accountability
+claim_type: descriptive
+maturity_level: m2
+summary: >
+  Two interviews keep a human approval step at the last outbound-content stage:
+  one says every AI-assisted campaign still requires human approval before launch,
+  and another requires an SDR to approve AI-generated personalized emails before
+  send.
+
+evidence_status: direct_quote_anchored
+synthesis_status: draft
+scorecard_status: blocked_pending_human_review
+deck_status: blocked_pending_human_review
+
+weighted_support:
+  supporting_quote_span_count: 2
+  supporting_source_count: 2
+  contradicting_source_count: 0
+  weighted_support_score: 0.68
+  confidence_note: Two direct sources support a narrow approval-gate pattern for outbound customer communications.
+
+source_links:
+  - source_id: src-enterprise-20260609-pat-sheth
+    source_version: sha256:ed8bbee4654d7ff161faf0dedcfee1b3a5bfe3619bdf25f74fabd529117fa8e1
+    transcript_file: interviews/transcripts/enterprise/Enterprise_Pat Sheth_20260609.md
+    quote_span_ids:
+      - qsp-pat-campaign-human-approval-20260609-001
+  - source_id: src-startup-20260601-daniel-guzman-follow-up
+    source_version: sha256:ab5090caf58a4bf7a683d0c201cbbc9291b9e89acc9d9ab44bc72319aa5685a2
+    transcript_file: interviews/transcripts/startups/Startup_Daniel Guzman Follow Up_20260601.md
+    quote_span_ids:
+      - qsp-daniel-sdr-email-approval-20260601-001
+
+caveats:
+  - Both examples concern outbound customer communications, not all customer-facing workflows.
+  - One source is a marketing-campaign approval gate and the other is an SDR-email approval step, so the exact control point differs.
+
+contradiction_links: []
+
+human_review:
+  state: pending
+  reviewer: null
+  last_reviewed: null
+  decision_note: Keep narrow to outbound customer communications until more customer-facing approval patterns are anchored.
+
+provenance:
+  created_by: codex-corroboration-pass
+  created_at: 2026-06-11
+  updated_at: 2026-06-11

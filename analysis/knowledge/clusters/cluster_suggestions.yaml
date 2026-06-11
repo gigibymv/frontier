@@ -1,0 +1,27 @@
+schema_version: 0.1
+
+cluster_suggestions:
+  - cluster_id: clu-context-governance
+    label: Context Governance and Ownership
+    candidate_members:
+      concepts:
+        - context-ownership
+        - platform-context-layer
+      claims:
+        - clm-oc-context-ownership-emerging-role
+    status: exploratory
+  - cluster_id: clu-ai-economics-controls
+    label: AI Economics and Control Surfaces
+    candidate_members:
+      concepts:
+        - token-economics
+      claims:
+        - clm-oc-token-budgeting-by-use-case
+    status: exploratory
+  - cluster_id: clu-agent-workflow-control
+    label: Agent Workflow Control
+    candidate_members:
+      concepts:
+        - agentic-orchestration
+      claims: []
+    status: placeholder

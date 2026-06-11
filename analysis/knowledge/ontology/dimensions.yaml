@@ -1,0 +1,26 @@
+dimensions_by_pillar:
+  Infrastructure:
+    - Models
+    - Data and Context Substrate
+    - Integration and Connection
+    - Execution Environments
+    - Eval and Telemetry Infrastructure
+    - Compute
+  Platform:
+    - Context Management
+    - Agent Design
+    - Workflow and Task Design
+    - Risk Management
+    - Orchestration
+    - Learning Systems
+  Operating Capabilities:
+    - Org Structure and Composition
+    - Talent Readiness
+    - Performance Management
+    - Review and Learning Culture
+    - Judgment and Accountability
+    - AI Economics and Capacity Management
+
+rules:
+  - Dimensions are controlled labels for indexing and later scoring.
+  - New dimensions should be added here before they are used in insights or claims.

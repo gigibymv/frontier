@@ -1,0 +1,49 @@
+insight_id: ins-oc-local-plugin-repo-workflow-sharing
+title: Bottom-up workflow sharing can happen through local plugin repositories
+pillar: Operating Capabilities
+dimension: Review and Learning Culture
+claim_type: descriptive
+maturity_level: m1
+summary: >
+  One enterprise interview describes employees publishing workflows and skills to
+  a local plugin repository so other employees can adopt them in their own
+  systems. The evidence supports a narrow internal-sharing mechanism, not a
+  broader marketplace claim.
+
+evidence_status: direct_quote_anchored
+synthesis_status: draft
+scorecard_status: blocked_pending_human_review
+deck_status: blocked_pending_human_review
+
+weighted_support:
+  supporting_quote_span_count: 2
+  supporting_source_count: 1
+  contradicting_source_count: 0
+  weighted_support_score: 0.54
+  confidence_note: Two direct quotes describe both bottom-up uptake and a local plugin repository, but the pattern is still mono-source and unmeasured.
+
+source_links:
+  - source_id: src-enterprise-20260611-dmitry-shkolnik
+    source_version: sha256:168f559f8b3205e41fcff5ab953ab6b94572002bad680f7876f6f181cfa47106
+    transcript_file: interviews/transcripts/enterprise/Enterprise_Dmitry Shkolnik_20260611.md
+    quote_span_ids:
+      - qsp-dmitry-bottom-up-network-effects-20260611-001
+      - qsp-dmitry-local-plugin-repo-sharing-20260611-001
+
+caveats:
+  - Current support is mono-source.
+  - The transcript describes internal sharing through a local plugin repository, not a formally governed internal marketplace.
+  - The transcript does not show measured workflow performance, formal template propagation rules, or cross-company evidence for marketplace dynamics.
+
+contradiction_links: []
+
+human_review:
+  state: pending
+  reviewer: null
+  last_reviewed: null
+  decision_note: Marketplace wording was narrowed out. Keep this as a local workflow-sharing pattern until another transcript confirms a comparable reuse mechanism.
+
+provenance:
+  created_by: codex-atomic-evidence-pass
+  created_at: 2026-06-11
+  updated_at: 2026-06-11

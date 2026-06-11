@@ -1,0 +1,455 @@
+schema_version: 0.1
+purpose: Track deck-level evidence and interpretation risks before material is promoted into a presentation.
+
+risk_register:
+  - risk_id: deck-risk-slide23-context-refresh-routine
+    slide_id: deck-checkin4-slide-23
+    related_claim_id: unresolved
+    risk_level: high
+    risk_type: unsupported_refresh_cadence
+    description: >
+      Slide 23 includes context-refresh and maintenance claims that rely on deck-only examples,
+      including daily update behavior that the transcript audit explicitly left unverified.
+    mitigation: >
+      Strip cadence language from the deck trace until a quote-anchored upstream object exists, or
+      re-source the example directly from transcripts.
+    owner: worker-b
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Current support covers human context ownership logic, not the claimed refresh routine or the
+      broader multi-firm generalization used on the slide.
+  - risk_id: deck-risk-slide29-hallucination-detection-hiring
+    slide_id: deck-checkin4-slide-29
+    related_claim_id: unresolved
+    risk_level: high
+    risk_type: likely_contaminated_case_study
+    description: >
+      Slide 29 attributes hallucination-detection hiring and interview redesign claims to a case
+      study, but prior audit work marked that claim family as deck-contaminated and not safe as
+      transcript-verified evidence.
+    mitigation: >
+      Remove the hiring-criterion claim from auditable deck trace until it is re-sourced against
+      the relevant transcript.
+    owner: worker-b
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The current knowledge layer has no transcript-backed claim object for this statement.
+  - risk_id: deck-risk-slide30-no-formal-review-overstatement
+    slide_id: deck-checkin4-slide-30
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: amplification
+    description: >
+      Slide 30 says employees build what they want with no formal review, which overstates the
+      verified Mitchell Fierro pattern. The transcript supports self-service building, but also
+      platform, permissioning, and deployment controls.
+    mitigation: >
+      Rephrase the case-study line around self-service building on governed rails, or keep it as a
+      risk-tagged deck interpretation rather than a verified claim.
+    owner: worker-b
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The deck wording collapses a governed platform model into an unrestricted-autonomy claim.
+  - risk_id: deck-risk-slide31-managers-ship-weekly
+    slide_id: deck-checkin4-slide-31
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: prior_misattribution
+    description: >
+      Slide 31 states that leaders are expected to ship weekly with AI. That claim is supported in
+      Kunal Datta's transcript, but earlier audit work misattributed the family to Amrish Macedo.
+    mitigation: >
+      Preserve the row only with explicit Kunal Datta attribution; do not carry forward the older
+      Amrish mapping.
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The remaining risk is audit-history noise, not absence of transcript support.
+  - risk_id: deck-risk-slide31-domain-knowledge-replaced
+    slide_id: deck-checkin4-slide-31
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: amplification
+    description: >
+      Slide 31 overstates Kunal Datta's point about reduced onboarding dependence into a stronger
+      claim that domain knowledge no longer matters.
+    mitigation: >
+      Keep the trace on reduced dependence and faster onboarding rather than total displacement of
+      domain knowledge.
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Attribution is now stable to Kunal Datta, but the deck wording remains too absolute.
+  - risk_id: deck-risk-slide31-daily-brain-cleanup
+    slide_id: deck-checkin4-slide-31
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: cadence_fragility
+    description: >
+      Slide 31 presents daily brain cleanup as a fixed operating-model cadence. Kunal Datta
+      supports recurring maintenance, but prior audit history made this cadence claim easy to
+      misattribute.
+    mitigation: >
+      Preserve the cadence only with an explicit Kunal caveat, or soften it to recurring cleanup.
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      This is now a precision and reuse risk, not a clean not-found case.
+  - risk_id: deck-risk-slide32-personal-subscription-anecdote
+    slide_id: deck-checkin4-slide-32
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: prior_misattribution
+    description: >
+      Slide 32 includes the personal-subscription and spare-time video-game anecdote. That story is
+      supported in Michael Bernstein's transcript, but an earlier audit trail incorrectly tied a
+      similar anecdote to Tyler Malone.
+    mitigation: >
+      Preserve the anecdote only with explicit Michael Bernstein attribution.
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The content is valid; the risk is stale attribution noise in prior audit artifacts.
+  - risk_id: deck-risk-slide33-ai-doctor-meeting
+    slide_id: deck-checkin4-slide-33
+    related_claim_id: unresolved
+    risk_level: high
+    risk_type: likely_contaminated_case_study
+    description: >
+      Slide 33 includes a weekly AI Doctor meeting inside a Vijay Devatha-aligned case study, but
+      prior audit work marked the Charles Barton version of that claim as not found.
+    mitigation: >
+      Treat the AI Doctor bullet as contaminated and exclude it from reuse unless it is
+      independently re-sourced.
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      There is still no safe transcript-backed source for this bullet in the slide-33 context.
+  - risk_id: deck-risk-slide33-token-tier-upgrade
+    slide_id: deck-checkin4-slide-33
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: prior_misattribution
+    description: >
+      Slide 33 includes manager-approved token tier upgrades. That mechanism is supported in Vijay
+      Devatha's transcript, but earlier audit work incorrectly associated it with Charles Barton.
+    mitigation: >
+      Preserve the claim only with explicit Vijay Devatha attribution and remove the old Charles
+      linkage from follow-on audits.
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The remaining risk is historical speaker confusion rather than lack of transcript support.
+  - risk_id: deck-risk-slide33-n-plus-one-replication
+    slide_id: deck-checkin4-slide-33
+    related_claim_id: unresolved
+    risk_level: high
+    risk_type: likely_contaminated_case_study
+    description: >
+      Slide 33 uses an N+1 replication failure anecdote as factual evidence, but there is no safe
+      Vijay Devatha anchor for it and the Charles Barton audit block was excluded until re-sourced.
+    mitigation: >
+      Remove the anecdote from traceable deck evidence unless it is directly re-sourced from the
+      intended speaker.
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      This remains a likely contaminated bullet inside the slide-33 mixed-source cluster.
+  - risk_id: deck-risk-slide39-legacy-second-pillar-label
+    slide_id: deck-checkin4-slide-39
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: vocabulary_drift
+    description: >
+      Slide 39 uses a legacy second-pillar label that does not match the live repository vocabulary
+      of Infrastructure, Platform, and Operating Capabilities.
+    mitigation: >
+      Map any future trace entries for this slide to Platform language and keep the deck label drift
+      called out explicitly during review.
+    owner: worker-b
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The slide taxonomy is out of sync with the active knowledge-system pillar labels.
+  - risk_id: deck-risk-slide40-deck-only-operating-capability-bullets
+    slide_id: deck-checkin4-slide-40
+    related_claim_id: unresolved
+    risk_level: high
+    risk_type: deck_only_generalization
+    description: >
+      Slide 40 mixes transcript-backed ideas with broader operating-capabilities assertions that do
+      not yet exist as upstream claims and are presented without per-bullet evidence counts.
+    mitigation: >
+      Register only narrowly traceable bullets; leave the rest unresolved until sourced into atomic
+      insights or synthesized claims.
+    owner: worker-b
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The slide remains a working interpretation surface rather than an auditable set of verified
+      research claims.
+  - risk_id: deck-risk-slide29-hands-on-effort-overclaim
+    slide_id: deck-checkin4-slide-29
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: amplification
+    description: >
+      Slide 29 expands Daniel Guzman's supported orchestration-role shift into a broader claim that
+      hands-on engineering effort is materially reduced across the workflow.
+    mitigation: >
+      Keep the claim tied to the verified role-shift quote unless a direct transcript passage
+      supports the labor-allocation wording.
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The current upstream atomic insight supports orchestration as a core skill, not the full
+      hands-on-effort reduction frame.
+  - risk_id: deck-risk-slide29-solo-engineer-staffing
+    slide_id: deck-checkin4-slide-29
+    related_claim_id: unresolved
+    risk_level: high
+    risk_type: staffing_generalization
+    description: >
+      Slide 29 asserts that multi-person squads are being replaced by solo engineers, which is
+      stronger than the currently registered Daniel evidence.
+    mitigation: >
+      Strip the staffing-replacement wording from any audited trace unless a direct transcript anchor
+      is added.
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      No current upstream claim object supports the squad-replacement formulation.
+  - risk_id: deck-risk-slide29-fde-role-mix
+    slide_id: deck-checkin4-slide-29
+    related_claim_id: unresolved
+    risk_level: high
+    risk_type: unsupported_org_design_outcome
+    description: >
+      The forward-deployment and solution-engineering growth claim is presented as a factual outcome
+      without a corresponding upstream object.
+    mitigation: >
+      Treat the role-mix statement as deck-only until it is directly re-sourced from the transcript.
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The current knowledge layer supports engineer-role changes, not this staffing-allocation
+      outcome.
+  - risk_id: deck-risk-slide30-skill-file-stack-inventory
+    slide_id: deck-checkin4-slide-30
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: deck_only_detailing
+    description: >
+      Slide 30 specifies a detailed skill-file inventory for Claude Code that is more precise than
+      the current transcript-backed objects.
+    mitigation: >
+      Keep the trace at the platform-guidance level unless the exact skill-file contents are sourced
+      into upstream evidence.
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The deck appears to add implementation detail beyond what is currently modeled.
+  - risk_id: deck-risk-slide30-ad-hoc-memory-generalization
+    slide_id: deck-checkin4-slide-30
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: amplification
+    description: >
+      Slide 30 says teams run ad-hoc memory and there is no company-wide brain, but Mitchell frames
+      this as an unresolved problem rather than a settled operating-model design.
+    mitigation: >
+      Rephrase around an unresolved company-brain gap or keep the sentence risk-tagged.
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The deck turns an open problem into a definitive architecture statement.
+  - risk_id: deck-risk-slide30-bi-tools-on-similar-path
+    slide_id: deck-checkin4-slide-30
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: forecast_presented_as_fact
+    description: >
+      Slide 30 extends verified Retool-reduction evidence into a broader BI-tool displacement claim.
+    mitigation: >
+      Keep the trace anchored on Retool reduction only unless the BI-tool trajectory is sourced.
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      No upstream claim currently supports the Tableau/Superset extrapolation.
+  - risk_id: deck-risk-slide31-speaker-attribution-ambiguity
+    slide_id: deck-checkin4-slide-31
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: speaker_attribution_ambiguity
+    description: >
+      Slide 31 text aligns closely with Kunal Datta's transcript, but prior audit notes associated
+      similar claim families with Amrish Macedo. The main risk is historical audit drift rather
+      than current source ambiguity.
+    mitigation: >
+      Preserve explicit Kunal Datta attribution in the trace and do not re-use the older Amrish
+      mapping.
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Direct quotes on the slide match Kunal Datta; the instability comes from legacy audit notes.
+  - risk_id: deck-risk-slide31-domain-knowledge-overstatement
+    slide_id: deck-checkin4-slide-31
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: amplification
+    description: >
+      Slide 31 compresses Kunal's nuance about reduced onboarding dependence into the stronger claim
+      that domain knowledge no longer matters.
+    mitigation: >
+      Rephrase the trace around reduced onboarding dependence rather than total domain-knowledge
+      displacement.
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The transcript says the need for domain expertise has reduced, not disappeared.
+  - risk_id: deck-risk-slide31-daily-brain-cadence
+    slide_id: deck-checkin4-slide-31
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: cadence_fragility
+    description: >
+      Slide 31 states a daily brain-cleanup cadence. While Kunal mentions recurring cleanup, prior
+      audit work already flagged similar cadence claims as contamination-prone.
+    mitigation: >
+      Keep the cadence explicitly caveated unless the exact operating frequency is re-sourced and
+      speaker-confirmed.
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The issue is not total absence of support so much as unstable attribution and exact cadence
+      wording.
+  - risk_id: deck-risk-slide32-rag-contrast-interpretation
+    slide_id: deck-checkin4-slide-32
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: interpretive_architecture_summary
+    description: >
+      Slide 32 frames Michael Bernstein's repo-native context pattern as file pointers instead of a
+      large RAG index, which is an analytical interpretation rather than a transcript quote.
+    mitigation: >
+      Keep the trace on repo-native context and just-in-time retrieval unless the RAG contrast is
+      explicitly sourced.
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The deck wording is plausible but not yet anchored as a formal research claim.
+  - risk_id: deck-risk-slide32-personal-upskilling-attribution
+    slide_id: deck-checkin4-slide-32
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: prior_misattribution
+    description: >
+      The Claude subscription and spare-time video-game anecdote is supported in Michael
+      Bernstein's transcript, but an earlier quality-check note tied a similar anecdote to another
+      speaker and marked it unsupported there.
+    mitigation: >
+      Preserve the anecdote only with explicit Michael attribution in the trace.
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The content appears valid, but the prior audit trail around speaker attribution is noisy.
+  - risk_id: deck-risk-slide33-mixed-speaker-case-study
+    slide_id: deck-checkin4-slide-33
+    related_claim_id: unresolved
+    risk_level: high
+    risk_type: likely_contaminated_case_study
+    description: >
+      Slide 33 is mixed-source. Several bullets are safely attributable to Vijay Devatha
+      (plan.md review, token tiers, PR rate, one-engineer-within-sprints, PM/designer prototypes),
+      while the AI Doctor and N+1 incident bullets still read as contaminated carry-overs.
+    mitigation: >
+      Do not reuse slide 33 as a single coherent case study. Split the Vijay-backed bullets from
+      the contaminated bullets before promotion.
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The slide-level narrative still blends safe Vijay rows with unsupported neighboring bullets.
+  - risk_id: deck-risk-slide33-planmd-workflow
+    slide_id: deck-checkin4-slide-33
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: duration_overstatement
+    description: >
+      Slide 33's plan.md workflow is attributable to Vijay Devatha, but the 3-5 day duration is
+      not anchored in the transcript and reads as deck compression.
+    mitigation: >
+      Preserve only the plan-reviewed-before-build substance unless the duration is re-sourced.
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The support gap is about exact timing, not speaker attribution.
+  - risk_id: deck-risk-slide33-ai-review-human-merge
+    slide_id: deck-checkin4-slide-33
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: compressed_guardrail_summary
+    description: >
+      Slide 33 compresses several Vijay Devatha guardrails into one sentence: AI assists code
+      review, while humans still perform line-by-line review and retain merge/deploy control.
+    mitigation: >
+      Reuse only as a summarized Vijay-attributed workflow, not as a near-quote.
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The remaining issue is sentence compression rather than unresolved speaker provenance.
+  - risk_id: deck-risk-slide33-designers-pms-self-prototype
+    slide_id: deck-checkin4-slide-33
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: mixed_slide_provenance
+    description: >
+      Slide 33 states that designers and PMs self-prototype. That claim is supported in Vijay
+      Devatha's transcript, but it sits inside a slide with neighboring contaminated bullets.
+    mitigation: >
+      Preserve explicit Vijay attribution and do not let contaminated neighboring bullets absorb
+      this row into the unsafe set.
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The risk is slide-level contamination, not lack of transcript support for this row.
+  - risk_id: deck-risk-slide33-one-engineer-within-sprint
+    slide_id: deck-checkin4-slide-33
+    related_claim_id: unresolved
+    risk_level: medium
+    risk_type: metric_precision
+    description: >
+      Vijay Devatha supports the timeline shift from a pizza-size team over 3-6 months to one
+      engineer delivering within sprints, but the deck tightens that to a singular sprint.
+    mitigation: >
+      Reuse the comparison only with the softer transcript wording unless the exact timing is
+      re-sourced.
+    owner: worker-f
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      This is a wording-precision issue inside a slide that still has separate contaminated rows.
+  - risk_id: deck-risk-slide34-post-merge-learning-loop
+    slide_id: deck-checkin4-slide-34
+    related_claim_id: unresolved
+    risk_level: high
+    risk_type: deck_only_learning_loop
+    description: >
+      Slide 34 presents a post-merge learning loop that writes every fix back into a skill so the
+      next bug is recognized faster, but that mechanism is not currently traceable upstream.
+    mitigation: >
+      Leave the learning-loop sentence unresolved until a quote-anchored transcript object exists.
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      Current transcript support covers reusable skills, not this explicit self-updating loop.
+  - risk_id: deck-risk-slide34-solo-engineer-staffing
+    slide_id: deck-checkin4-slide-34
+    related_claim_id: unresolved
+    risk_level: high
+    risk_type: staffing_generalization
+    description: >
+      Like slide 29, slide 34 states that solo engineers replace 3-4 person engineer-plus-QA
+      squads without a current upstream claim supporting that staffing replacement framing.
+    mitigation: >
+      Keep the time-reduction metric only and quarantine the staffing replacement language.
+    owner: worker-d
+    last_reviewed: 2026-06-11
+    unresolved_issue: >
+      The workforce-composition claim remains stronger than the transcript-backed evidence.

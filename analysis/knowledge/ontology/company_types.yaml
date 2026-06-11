@@ -1,0 +1,7 @@
+allowed_values:
+  - startup_scaleup
+  - enterprise_large_org
+  - expert
+  - mixed_or_unknown
+
+rule: Use `mixed_or_unknown` when the repo does not yet support a stronger classification.

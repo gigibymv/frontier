@@ -1,0 +1,18 @@
+allowed_values:
+  - grade: A
+    label: Multi-source direct evidence
+    threshold: Multiple independently anchored quote spans across relevant source types.
+  - grade: B
+    label: Direct evidence, limited breadth
+    threshold: One or more anchored quote spans with clear relevance, but limited source diversity.
+  - grade: C
+    label: Indirect or partial evidence
+    threshold: Useful signal exists, but anchoring, breadth, or wording support is incomplete.
+  - grade: D
+    label: Weak evidence
+    threshold: Fragmentary evidence, paraphrase-only support, or heavy caveats.
+  - grade: E
+    label: Unsupported
+    threshold: No acceptable evidence in the registered corpus.
+
+rule: Evidence grades apply to the current state of the corpus, not to the intrinsic importance of the claim.

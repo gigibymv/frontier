@@ -1,0 +1,45 @@
+insight_id: ins-oc-agent-orchestration-skill
+title: Agent orchestration is emerging as a core engineering skill
+pillar: Operating Capabilities
+dimension: Talent Readiness
+claim_type: descriptive
+maturity_level: m1
+summary: >
+  One transcript explicitly reframes the engineer role around understanding and
+  orchestrating agents, with direct coding positioned as less central than before.
+
+evidence_status: direct_quote_anchored
+synthesis_status: draft
+scorecard_status: blocked_pending_human_review
+deck_status: blocked_pending_human_review
+
+weighted_support:
+  supporting_quote_span_count: 1
+  supporting_source_count: 1
+  contradicting_source_count: 0
+  weighted_support_score: 0.44
+  confidence_note: Clear direct wording, but still mono-source and role-specific.
+
+source_links:
+  - source_id: src-startup-20260522-daniel-guzman
+    source_version: sha256:be46f029fdffd9886d76a7e3dd41c45621dacf440a7930a0ad600235566d522b
+    transcript_file: interviews/transcripts/startups/Startup_Daniel Guzman_20260522.md
+    quote_span_ids:
+      - qsp-daniel-agent-orchestration-20260522-001
+
+caveats:
+  - Current support is mono-source.
+  - The quote is about hiring and role design, not about a broad labor-market equilibrium.
+
+contradiction_links: []
+
+human_review:
+  state: pending
+  reviewer: null
+  last_reviewed: null
+  decision_note: Keep narrow until a second transcript independently names orchestration as a core engineering skill.
+
+provenance:
+  created_by: codex-hardening-pass
+  created_at: 2026-06-11
+  updated_at: 2026-06-11

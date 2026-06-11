@@ -1,0 +1,46 @@
+insight_id: ins-oc-legal-review-shift-summary-check
+title: Legal review effort shifts toward AI-generated summary outputs
+pillar: Operating Capabilities
+dimension: Org Structure and Composition
+claim_type: descriptive
+maturity_level: m1
+summary: >
+  In one regulated onboarding workflow, work that previously required several
+  dedicated legal teams for weeks is reduced by AI-generated summaries with citations,
+  changing where human legal effort is spent.
+
+evidence_status: direct_quote_anchored
+synthesis_status: draft
+scorecard_status: blocked_pending_human_review
+deck_status: blocked_pending_human_review
+
+weighted_support:
+  supporting_quote_span_count: 1
+  supporting_source_count: 1
+  contradicting_source_count: 0
+  weighted_support_score: 0.44
+  confidence_note: Clear before-and-after wording, but mono-source and specific to a regulated KYC workflow.
+
+source_links:
+  - source_id: src-startup-20260608-kal-gangavarapu
+    source_version: sha256:cf3da311bd5c8350c2dba6d9ee55eec87c475f188c30321f639f8314691a5adf
+    transcript_file: interviews/transcripts/startups/Startup_Kal Gangavarapu_20260608.md
+    quote_span_ids:
+      - qsp-kal-legal-summary-review-shift-20260608-001
+
+caveats:
+  - Current support is mono-source.
+  - The transcript does not support full legal removal; human involvement remains elsewhere in the regulated workflow.
+
+contradiction_links: []
+
+human_review:
+  state: pending
+  reviewer: null
+  last_reviewed: null
+  decision_note: Preserve as a narrow, workflow-specific role-shift record until corroborated by another regulated example.
+
+provenance:
+  created_by: codex-atomic-evidence-pass
+  created_at: 2026-06-11
+  updated_at: 2026-06-11

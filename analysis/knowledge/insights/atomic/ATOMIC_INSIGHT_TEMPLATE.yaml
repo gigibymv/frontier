@@ -1,0 +1,46 @@
+insight_id: ins-template-slug
+title: Replace with a short descriptive title
+pillar: Operating Capabilities
+dimension: AI Economics and Capacity Management
+claim_type: descriptive
+maturity_level: m1
+summary: >
+  Replace with a narrow, transcript-grounded insight statement.
+
+evidence_status: pending_review
+synthesis_status: not_started
+scorecard_status: blocked_pending_human_review
+deck_status: blocked_pending_human_review
+
+weighted_support:
+  supporting_quote_span_count: 0
+  supporting_source_count: 0
+  contradicting_source_count: 0
+  weighted_support_score: 0.0
+  confidence_note: Replace with the scoring logic used by the team.
+
+source_links:
+  - source_id: src-example
+    source_version: pending
+    transcript_file: interviews/transcripts/example.md
+    quote_span_ids:
+      - qsp-example-001
+
+caveats:
+  - Replace with a caveat or delete if not applicable.
+
+contradiction_links:
+  - insight_id: ins-related-contradiction
+    relationship: tension
+    note: Replace or delete.
+
+human_review:
+  state: pending
+  reviewer: null
+  last_reviewed: null
+  decision_note: Awaiting review.
+
+provenance:
+  created_by: codex-bootstrap
+  created_at: 2026-06-11
+  updated_at: 2026-06-11

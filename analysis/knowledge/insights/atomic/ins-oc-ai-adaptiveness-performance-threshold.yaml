@@ -1,0 +1,50 @@
+insight_id: ins-oc-ai-adaptiveness-performance-threshold
+title: AI adaptiveness is becoming a hard performance threshold
+pillar: Operating Capabilities
+dimension: Performance Management
+claim_type: descriptive
+maturity_level: m2
+summary: >
+  Two interviews describe AI proficiency as part of performance management, with
+  low adoption framed as a material risk to future performance standing.
+
+evidence_status: direct_quote_anchored
+synthesis_status: draft
+scorecard_status: blocked_pending_human_review
+deck_status: blocked_pending_human_review
+
+weighted_support:
+  supporting_quote_span_count: 2
+  supporting_source_count: 2
+  contradicting_source_count: 0
+  weighted_support_score: 0.69
+  confidence_note: Two anchored sources support the threshold pattern, though the exact review mechanism varies.
+
+source_links:
+  - source_id: src-startup-20260601-cullen-brown
+    source_version: sha256:d48feb086e2b1fdcc32beeb65928cc3f497039103666d755b4d413f6a3582312
+    transcript_file: interviews/transcripts/startups/Startup_Cullen Brown_20260601.md
+    quote_span_ids:
+      - qsp-cullen-ai-adaptiveness-threshold-20260601-001
+  - source_id: src-enterprise-20260609-pat-sheth
+    source_version: sha256:ed8bbee4654d7ff161faf0dedcfee1b3a5bfe3619bdf25f74fabd529117fa8e1
+    transcript_file: interviews/transcripts/enterprise/Enterprise_Pat Sheth_20260609.md
+    quote_span_ids:
+      - qsp-pat-ai-proficiency-do-or-die-20260609-001
+
+caveats:
+  - The two examples come from different organizational contexts and describe different review mechanics.
+  - Current support establishes a threshold pattern, not a standardized benchmark practice.
+
+contradiction_links: []
+
+human_review:
+  state: pending
+  reviewer: null
+  last_reviewed: null
+  decision_note: Strong candidate for later synthesis, but still too narrow for scorecard promotion.
+
+provenance:
+  created_by: codex-hardening-pass
+  created_at: 2026-06-11
+  updated_at: 2026-06-11

@@ -1,0 +1,18 @@
+allowed_values:
+  - id: m0
+    label: Not Observed
+    description: No credible evidence in the current corpus.
+  - id: m1
+    label: Emerging
+    description: Isolated examples or early experiments exist, but practice is not yet stable.
+  - id: m2
+    label: Repeatable
+    description: The pattern appears in multiple settings with some operating discipline.
+  - id: m3
+    label: Integrated
+    description: The pattern is embedded in cross-team or cross-workflow operations.
+  - id: m4
+    label: Frontier
+    description: The pattern is systematic, instrumented, and part of the firm's operating model.
+
+usage_note: Maturity levels describe the observed practice, not presentation readiness.
