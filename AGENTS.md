@@ -1,5 +1,9 @@
 ## Imported Claude Cowork project instructions
 
+## Working Language
+
+All project documents, deliverables, reports, and rendered outputs must be written in English.
+
 Context
 The goals of this project are to understand what “frontier firms” look like in the age of AI and translate those patterns into a practical benchmark for Microsoft. This is sort of a revamp of the Tech Intensity study and follow-on projects we did from 2020-2022, but adapted to modern organizations and with a focus on operating models and the frontier. Our current research framework (WIP) has three main components:
 Infrastructure: the technology foundation that powers AI-enabled work, including compute, cloud, models, data platforms, and the core technical systems required to train, serve, and scale AI.

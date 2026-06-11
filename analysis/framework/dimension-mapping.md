@@ -27,7 +27,7 @@
 |---|---|---|---|
 | Context management | D4 — Context & data management | **Strong** | Best-covered platform dimension. Three distinct patterns documented: monorepo markdown, Notion brain, per-agent scoping. Human curation universally present |
 | Agent design | D2 — Agentic architecture | **Strong** | Hierarchical orchestration, specialized agents, registry, sub-agent delegation all documented across multiple interviews |
-| Workflow & task design | D2 — Agentic architecture + D1 — Focal workflow | **Strong** | plan.md, bounded tasks, acceptance criteria, advisor/executor/reviewer split all appear. Best documented in Michael Bernstein, Kunal Datta, Charles Barton |
+| Workflow & task design | D2 — Agentic architecture + D1 — Focal workflow | **Strong** | plan.md, bounded tasks, acceptance criteria, and advisor/executor/reviewer splits appear. Stronger transcript-supported examples are Michael Bernstein, Kunal Datta, Daniel Guzman, and Mitchell Fierro; do not rely on Charles Barton for this without re-sourcing |
 | Orchestration | D2 — Agentic architecture | **Moderate** | Dynamic vs. deterministic routing discussed. Temporal as durable execution (Mitchell). Model routing less explicit — most firms use one primary model |
 | Risk management | D5 — HITL + D6 — Guardrails & governance | **Strong** | Multi-stage review, human-on-the-loop, audit trails documented. The guardrail *process* (Kunal's multi-stage code pipeline) is the richest case study in the corpus |
 | Learning systems | D4 — Context & data management + D7 — Value & metrics | **Partial** | Fix→skill, postmortem→context loops described by several (Michael, Cullen, Daniel). But systematic golden datasets and workflow evals are rare. Most learning is ad hoc |
@@ -43,7 +43,7 @@
 | Org structure & composition | D8 — Org changes & roles | **Strong** | Role collapse (SWE absorbing PM/DS/QA), team size compression, "1 engineer builds" pattern well documented. Mostly in startups — enterprise patterns weaker |
 | Talent readiness | D12 — Hiring & talent | **Strong** | AI fluency as binary threshold, plan.md in interviews, live-build assessments all documented. Pat Sheth adds "future-proof role evaluation" before opening a req |
 | Performance management | D8 + D11 | **Weak** | AI leverage as review dimension mentioned (Dmitry, Pat) but no firm has a mature implemented system. Described as "in progress" or "planned for end of year" |
-| Review & learning culture | D9 — Change management & culture | **Partial** | "AI Doctor meetings" (Charles Barton), postmortem culture (Michael), failure tolerance discussed. But formal diagnostic forums are rare — most learning is informal |
+| Review & learning culture | D9 — Change management & culture | **Partial** | Postmortem culture, peer workflow sharing, and failure tolerance are discussed. Formal "AI Doctor meeting" claims remain unverified in transcripts; most learning is informal |
 | Judgment & accountability | D5 — HITL + D6 — Guardrails | **Strong** | "Committer owns AI output" principle, defined human review junctions, higher bar for customer-facing AI all documented. Arnon (voice AI) is the only case where human review is nearly eliminated |
 | AI economics & value | D7 — Value & metrics + D11 — Token economics | **Partial** | Outcome measurement exists (time reduction, team size) but is mostly proxies. Token economics is emerging but not formalized. Outcome-based pricing models not yet seen in practice |
 
@@ -96,7 +96,7 @@ Multiple firms (Mitchell, Kunal, Dmitry, Charles) identify an unsolved problem: 
 - Learning systems (which capture feedback on agent outputs, not human expertise)
 
 The tribal knowledge problem is: *how do you encode what experts know but can't fully articulate into agent context?* Approaches attempted:
-- Daily brain refresh with Claude suggestions (Amrish)
+- Subject-matter ownership and approval of context changes (Dmitry); daily automated brain-refresh claims remain unverified
 - "Context ownership" roles (Dmitry)
 - Encoding "do/don't" lists in CLAUDE.md from past mistakes
 - Weekly tribal knowledge codification meetings
@@ -112,7 +112,7 @@ No one has solved this. It is the deepest unsolved problem in the corpus.
 
 The framework's "AI economics & value" sub-dimension covers outcome measurement and value attribution. But what interviews surface is a distinct *operational* token management problem:
 
-- Token tiering by engineer seniority (Charles Barton: T1/T2/T3 with manager-approved upgrades)
+- Token budgeting by use-case type (Kal); seniority tiering with manager-approved upgrades remains unverified
 - Model routing based on task complexity to control burn (professional services firm)
 - Per-agent context scoping explicitly to reduce token consumption
 - Proactive limits before value is demonstrated (JPMorgan/Kal)

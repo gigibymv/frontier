@@ -18,7 +18,7 @@ PPTX-only sources are excluded. Synthesis-derived claims that couldn't be traced
 **Senior leaders expected to personally ship with AI** | n=2 verified
 
 - "The role of the expert is becoming more of a reviewer or a manager. Even when I'm doing IC work, I'm actually using manager skills." (Kunal Datta — verified)
-- CEO uses Claude autonomously for board reports and slide decks, without support staff. (Tyler Malone — verified in transcript)
+- CEO uses Claude autonomously for board reports and slide decks. (Tyler Malone — verified in transcript; "without support staff" was not stated)
 
 ---
 
@@ -112,7 +112,7 @@ PPTX-only sources are excluded. Synthesis-derived claims that couldn't be traced
 
 **Model routing by task complexity** | n=2 verified
 
-- "Deliberate Haiku for routine tasks, Opus for complex ones — to optimize costs." (Arnon — verified)
+- "Deliberate cheaper-model routing for routine tasks and stronger-model routing for complex tasks — to optimize costs." (Arnon — verified in substance; exact transcript contrast includes Haiku for cost and Opus/Sonnet for complexity)
 - "Cost and ETA estimated at each turn — token cost vs. time to generate as a feedback loop." (Alec Dickinson — verified)
 
 ---

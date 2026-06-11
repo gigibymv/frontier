@@ -45,7 +45,7 @@ Deliberately separating context per workflow is not just about relevance — it'
 
 - "Context isolated by use case — legal security." (Interviewee — Fetch Rewards)
 - "Predefined bounding box for customer-facing agents — language and category limits. Each agent has a delimited context perimeter." (Interviewee — digital commerce)
-- "Internal APIs write-access for engineering only. Non-engineers = read-only + controlled API calls." (Interviewee — Infrastructure)
+- "Internal APIs with write access are engineering-owned; non-engineers receive permissioned, read-oriented access and controlled API calls for approved actions." (Interviewee — Infrastructure)
 
 ---
 
@@ -123,7 +123,7 @@ When a skill is replaced, the old one contains a redirect instruction so that ag
 Classifying agent-generated outputs (PRs, decisions) as low/medium/high risk to determine which require human review. Low-risk outputs are auto-merged; higher-risk ones go through review. Progressive autonomy without a blanket policy.
 
 - "Hard task: categorize issues into low risk, mid risk, high risk. For low risk, we should be able to trust the judgment of the agents." (Interviewee — Core SaaS)
-- "Existing templates = lighter review. New external formats = full review." (Interviewee — Enterprise tech — partial)
+- "Existing templates are faster/cheaper to execute; campaigns still go through compliance and human approval." (Interviewee — Enterprise tech — corrected)
 
 ---
 
@@ -207,7 +207,7 @@ Frontier firms deliberately route all inter-agent communication through the mast
 
 **Temporal / durable execution for long-lived agentic workflows** | n=1 explicit
 
-Standard orchestration tools (LangChain, etc.) are stateless — they fail on long-duration tasks. Temporal provides durable execution: retry logic, state persistence across hours or days, and sub-workflow composition. Used internally by OpenAI and Anthropic.
+Temporal provides durable execution: retry logic, state persistence, and multi-stage workflow composition. The transcript support here comes from Michael Bernstein's implemented Temporal workflows and Aaron White's expert discussion of durable execution frameworks; do not treat external OpenAI/Anthropic usage as interview-verified.
 
 - "Temporal = durable orchestrator. Activities + workflows + sub-workflows. Long-lived workflows: duration hours to days. Retry logic. This is how you build agents that don't lose state." (Interviewee — Markup AI)
 
@@ -247,18 +247,18 @@ A structured architectural pattern for enterprise-scale agent deployment: (1) pr
 A systematic framework — not ad hoc judgment — for deciding when human review is required. PRs, outputs, or decisions are classified by risk level; the classification determines the review gate. This operationalizes the HITL decision rather than leaving it to individual discretion.
 
 - "Low risk, mid risk, high risk classification — for low risk, trust the agent's judgment." (Interviewee — Core SaaS)
-- "Existing templates = lighter review. New formats = full review." (Interviewee — Enterprise tech)
-- "Internal APIs = write-only for engineering. Non-engineers = read-only + controlled calls." (Interviewee — Infrastructure)
+- "Existing templates are faster/cheaper to execute; campaigns still go through compliance and human approval." (Interviewee — Enterprise tech — corrected)
+- "Internal APIs with write access are engineering-owned; non-engineers receive permissioned, read-oriented access and controlled calls." (Interviewee — Infrastructure)
 - "Final human validation maintained for compliance; but compliance team now just approves rather than reviews substantively." (Interviewee — digital commerce)
 
 ---
 
-**RLHF on human corrections as a closed feedback loop** | n=1–2
+**RLHF / human-feedback learning loops are mostly prospective** | n=1–2 mentioned, 0 clearly implemented
 
-Human corrections to agent outputs are not just discarded — they're fed back into model training. A systematic improvement loop that requires explicit design; it doesn't happen automatically.
+Human feedback is discussed as a way to improve agent behavior, but the transcripts checked do not show a mature, implemented RLHF pipeline. Treat this as an emerging design direction, not an observed closed-loop practice.
 
-- "RLHF used by operations to train their models." (Interviewee — AI startup)
-- "RLHF on human annotations. Guardrails co-designed with business experts." (Interviewee — AI Factory)
+- "We have not gone to the RLHF or RL parts of it yet... this is a precursor." (Interviewee — digital commerce)
+- Human approvals and comments could feed reinforcement learning with human feedback and capture decision rationale. (Interviewee — AI Factory)
 
 ---
 
@@ -368,7 +368,7 @@ Design documents are never deleted — they form a permanent archive of the "why
 | Orchestration | LangChain for enterprise step sequencing | 2–3 |
 | Orchestration | 4-layer enterprise reference architecture | 1–2 |
 | Risk management | Risk classification to calibrate review burden | 3–4 |
-| Risk management | RLHF on human corrections | 1–2 |
+| Risk management | RLHF / human-feedback learning loops are mostly prospective | 1–2 mentioned, 0 clearly implemented |
 | Risk management | API vault for credential isolation | 1–2 |
 | Risk management | Random post-audit sampling | 1–2 |
 | Risk management | On-premise deployment for data sovereignty | 1–2 |

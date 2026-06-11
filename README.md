@@ -36,7 +36,11 @@ Frontier Firm/
 │       ├── enterprise/              ← 3 enterprise interviews
 │       └── expert/                  ← 1 expert interview
 └── analysis/
-    └── interview-synthesis.md       ← structured interview log (13 dimensions × 25 interviews)
+    ├── framework/                   ← framework and pillar mapping
+    ├── infrastructure/              ← infrastructure-specific transcript analyses
+    ├── interviews/                  ← structured interview synthesis
+    ├── operating-capabilities/      ← operating-capabilities insights, slide support, and org-type checks
+    └── quality-checks/              ← source-integrity and hallucination audits
 ```
 
 ---
@@ -55,4 +59,6 @@ Frontier Firm/
 ## Key Outputs
 
 - `output/MSFT-Frontier Firms-CheckIn4 - 2026.06.12.pptx` — latest check-in deck (scorecard draft, case studies, operating model framework)
-- `analysis/interview-synthesis.md` — 25 structured interview profiles across 13 dimensions + cross-cutting observations
+- `analysis/interviews/interview-synthesis.md` — 25 structured interview profiles across 13 dimensions + cross-cutting observations
+- `analysis/framework/dimension-mapping.md` — mapping of interview dimensions to the three-pillar framework
+- `analysis/operating-capabilities/slide-traits-bilingual.md` — bilingual operating-capabilities slide trait guide with evidence status

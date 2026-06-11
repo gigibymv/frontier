@@ -264,7 +264,7 @@ After reading all 25 interviews, 13 recurring dimensions structure the conversat
 
 **D7 — Measurement:** Portfolio planning cycle reduced (from 1 quarter to… less). Dev productivity multiplied. "5 product releases while a competitor is still doing their planning" (SAP allusion).
 
-**D8 — Roles:** "Empowered teams": teams of 6-8 with product, engineering, design — all disciplines together. No functional silos. Design team coding with AI assistance. Engineers doing product thinking.
+**D8 — Roles:** "Empowered teams": teams of 6-8 with product, engineering, design — all disciplines together. No functional silos. Engineers increasingly work through agents rather than coding manually. Earlier "design team coding" attribution is not transcript-verified.
 
 **D9 — Culture:** Top-down necessary (CEO/board). Comparison: oil tanker (100K enterprise) vs. startup (speedboat). Culture created at the highest leadership level. Ex-Hybris/SAP: preserving startup culture inside a giant.
 
@@ -408,7 +408,7 @@ After reading all 25 interviews, 13 recurring dimensions structure the conversat
 
 **D7 — Measurement:** AEs: 2-3x more deals handled. Engineering: each manager/lead ships to production each week as a personal goal. Design: "Claude Design = huge boost."
 
-**D8 — Roles:** All roles become hybrid. Leader = IC + reviewer. "We're just rappers" — humans orchestrate agents. Engineers without a team (Kunal wants to ship himself each week).
+**D8 — Roles:** All roles become hybrid. Leader = IC + reviewer/manager. Kunal links IC work to manager-like skills when using AI; avoid over-interpreting the ambiguous "rappers/wrappers" aside as a formal operating-model claim. Engineers without a team (Kunal wants to ship himself each week).
 
 **D9 — Culture:** Leaders lead by example by doing it themselves (CGO runs his own Dripify campaigns, Kunal ships code). "If he can do it, so can I." No delegation — direct participation.
 
@@ -418,7 +418,7 @@ After reading all 25 interviews, 13 recurring dimensions structure the conversat
 
 **D12 — Hiring:** By function (product = Kunal, engineering = CTO, etc.). AI proficiency criterion implicit.
 
-**D13 — Vision:** Capture human "intent" in the pipeline — the missing link. "Rappers orchestrate the beats — we're the rappers." Growing automation of the product → engineering pipeline.
+**D13 — Vision:** Capture human "intent" in the pipeline — the missing link. Growing automation of the product → engineering pipeline.
 
 **Key quote:** "The role of the expert is becoming more of a reviewer or a manager. Even when I'm doing IC work, I'm actually using manager skills."
 
@@ -444,7 +444,7 @@ After reading all 25 interviews, 13 recurring dimensions structure the conversat
 
 **D7 — Measurement:** "5 PRs/day" vs. "1-3 PRs/week" before AI. Business analytics without SQL = democratization of data access. Automatic incident/metric correlation = new level of insight.
 
-**D8 — Roles:** Designers submitting PRs (experimental). Engineers touching other codebases (with friction). Review = new bottleneck. "Proficiency lack deters overreach" — competency limits remain a natural guard.
+**D8 — Roles:** Design and product teams are empowered to contribute code; the transcript supports this as an established practice, not merely an experiment. Engineers touching other codebases encounter friction. Review = new bottleneck. "Proficiency lack deters overreach" — competency limits remain a natural guard.
 
 **D9 — Culture:** Bottom-up (each team builds its own workflows). Top-down to standardize infrastructure. Tension between central standardization and local ownership.
 
@@ -512,7 +512,7 @@ After reading all 25 interviews, 13 recurring dimensions structure the conversat
 
 **D5 — HITL:** Human review of PR. Non-engineers submit apps (engineering governance reviews access and usage).
 
-**D6 — Guardrails:** Internal APIs write-access for engineering only. Non-engineers = read-only + controlled API calls. Observability of who builds what. App scanning for duplication/compliance.
+**D6 — Guardrails:** Internal APIs with write access are built and tested by engineering. Non-engineers receive permissioned, read-oriented access plus controlled API calls that can execute approved actions. Observability of who builds what. App scanning for duplication/compliance.
 
 **D7 — Measurement:** Reduced Retool dependency (cost + vendor lock-in). Ops + payments + disputes = transformed workflows. No quantified metrics cited.
 
@@ -588,7 +588,7 @@ After reading all 25 interviews, 13 recurring dimensions structure the conversat
 
 **D7 — Measurement:** PR velocity (Claude analyzes commits). Token cost/session (tool usage). Personal week-over-week comparison. No centralized organizational tracking.
 
-**D8 — Roles:** Engineers = multi-skilled (security + packaging + quality in one person thanks to agents). CEO = autonomous on his own deliverables (board reports without support).
+**D8 — Roles:** Engineers = multi-skilled (security + packaging + quality in one person thanks to agents). CEO = autonomous on his own deliverables, including board reports and decks.
 
 **D9 — Culture:** Bottom-up (principal engineer builds, shares to the organization). Encourages other engineers to follow. Small size = faster adoption.
 
@@ -650,7 +650,7 @@ After reading all 25 interviews, 13 recurring dimensions structure the conversat
 
 **D2 — Agentic architecture:** Engineering: Jira → IDE (Claude Code/Cursor) → PR → testing (being automated). Support: AI ingests ticket → response + deduplication + prioritization for engineering. Ops: NL query → data warehouse. HR: personalized chatbot (location, title, comp history, past questions).
 
-**D3 — Technical stack:** Claude Code, Cursor, Codex. External AI startup for incident management (in discussion). Data warehouse (NL query). Slack (HR chatbot). RLHF used by operations to train their models.
+**D3 — Technical stack:** Claude Code, Cursor, Codex. External AI startup for incident management (in discussion). Data warehouse (NL query). Slack (HR chatbot). Contracted human-workforce operations also perform RLHF for external model-training clients; do not treat this as a verified internal closed-loop training system.
 
 **D4 — Context:** Campaign data (payload, status, dates, risks). Employee data (location, title, comp, history). Benefits documentation. "Talk to a human" button always available.
 
@@ -690,7 +690,7 @@ After reading all 25 interviews, 13 recurring dimensions structure the conversat
 
 **D4 — Context:** Brand guidelines, enriched brief (initial brief improved by AI), variant performance history. "The quality of the brief determines the quality of the output."
 
-**D5 — HITL:** Brand compliance team + legal compliance team review new content. Existing templates = lighter review. "Two cities": those who embrace (reduced review) vs those who resist (full review).
+**D5 — HITL:** Brand compliance team + legal compliance team review campaigns/content. Existing templates can make execution faster and cheaper, but the transcript does not support a distinct lighter-review pathway for templates. "Two cities": those who embrace vs. those who resist.
 
 **D6 — Guardrails:** Legal + brand compliance review. Human approval on new formats. Clear limits on what AI can send without review.
 
@@ -700,7 +700,7 @@ After reading all 25 interviews, 13 recurring dimensions structure the conversat
 
 **D9 — Culture:** Divided adoption ("two cities"). Change management underway. Training needed for resisters.
 
-**D10 — Maturity:** In transition. Existing templates well automated. New formats still under full review.
+**D10 — Maturity:** In transition. Existing templates are easier to automate; new formats still require more work and review.
 
 **D11 — Token economics:** Not addressed.
 
