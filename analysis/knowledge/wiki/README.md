@@ -2,9 +2,12 @@
 
 This directory is the browsable wiki layer for the Frontier knowledge system.
 
+For the operating schema, read [schema.md](schema.md). For query behavior, read [workflows/query-wiki.md](workflows/query-wiki.md).
+
 The evidence backend lives one level up:
 
 - `../sources/` stores source registration, transcript hashes, corpus snapshots, and quote spans.
+- `../sources/ingestion_status.yaml` stores per-source processing state so registered-only transcripts are explicit.
 - `../insights/atomic/` stores narrow evidence-backed insights.
 - `../claims/` stores synthesized claims that remain blocked until human review.
 - `../deck_trace/` stores slide-claim traceability and deck risk.
@@ -34,11 +37,14 @@ If a statement is exploratory, label it as an open question or synthesis caveat.
 
 When a new transcript or question arrives:
 
-1. Register source and quote spans in the backend.
-2. Add or update atomic insights.
-3. Add or update synthesized claims.
-4. Update relevant wiki pages.
-5. Update [index.md](index.md).
-6. Append [log.md](log.md).
-7. Run `ruby analysis/knowledge/scripts/validate_wiki.rb`.
+1. Follow [workflows/ingest-new-transcript.md](workflows/ingest-new-transcript.md) for transcript ingest.
+2. Update only the wiki pages whose human-readable understanding changes.
+3. Update [sources/ingestion-status.md](sources/ingestion-status.md) or its backend status file if the source moved from registered-only to quote-backed or insight-backed.
+4. Update [index.md](index.md) if new pages need to be reachable.
+5. Append [log.md](log.md).
+6. Run both validators:
 
+```sh
+ruby analysis/knowledge/scripts/validate_knowledge.rb
+ruby analysis/knowledge/scripts/validate_wiki.rb
+```

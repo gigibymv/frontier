@@ -2,7 +2,7 @@
 
 ## Current Deck Trace
 
-Deck traceability lives in `../../deck_trace/`.
+Deck traceability lives in `../../deck_trace/`. The current slide claim registry is a risk inventory, not a slide-ready approval registry.
 
 Current audit coverage includes:
 
@@ -24,5 +24,4 @@ Current audit coverage includes:
 ## Open Work
 
 - Split slide 33 into safe Vijay-backed bullets and contaminated bullets before deck reuse.
-- Do not mark any deck claim `slide_ready` without human review.
-
+- Do not mark any deck claim `slide_ready` without human review. Unresolved rows in the current slide claim registry are audit entries, not approved slide claims.

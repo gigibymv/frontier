@@ -1,6 +1,11 @@
-# Frontier Knowledge Operating System
+# Frontier Knowledge System
 
-This tree is the initial provenance-first research knowledge system for Frontier.
+Start with the readable wiki: [`wiki/index.md`](wiki/index.md).
+
+This tree has two layers:
+
+- `wiki/` is the human-facing LLM Wiki. It is the entrypoint for reading, maintaining, and updating Frontier research knowledge.
+- The other folders are the provenance backend. They preserve source hashes, quote spans, atomic insights, synthesized claims, and deck traceability.
 
 The operating rule is simple: every promoted research object should be traceable back to a specific source version and, where possible, a stable quote span. The intended chain is:
 
@@ -8,21 +13,22 @@ The operating rule is simple: every promoted research object should be traceable
 2. quote spans
 3. atomic insights
 4. synthesized claims
-5. concept pages
+5. wiki pages
 6. scorecard items
 7. deck trace
 
 ## Provenance Model
 
 - `ontology/` defines the controlled vocabulary used everywhere else.
-- `sources/` records source identity, transcript manifests, corpus snapshots, and quote-span anchors.
+- `sources/` records source identity, transcript manifests, corpus snapshots, quote-span anchors, and per-source ingestion status.
 - `insights/atomic/` is the first layer where interpretation is allowed. Each atomic insight should stay narrow, source-linked, and separately reviewable.
 - `claims/` is the synthesis layer. Claims may combine multiple atomic insights, but they remain blocked from `scorecard_ready` or `slide_ready` until a human explicitly approves them.
-- `concepts/` holds lightweight concept pages that summarize what the research currently suggests without pretending the model is settled.
+- `wiki/concepts/` is the live concept surface.
+- `concepts/` is deprecated and retained only as a compatibility pointer to `wiki/concepts/`.
 - `clusters/` proposes candidate grouping structures for later synthesis work.
 - `deck_trace/` provides the contract for slide-level traceability and risk review.
-- `workflows/` defines how new evidence enters the system and how material is promoted or challenged.
-- `wiki/` is the LLM-maintained readable layer: index, log, concepts, people, sources, syntheses, and open questions.
+- `workflows/` defines backend promotion and verification protocols.
+- `wiki/workflows/` defines the human-readable wiki maintenance loop.
 
 ## Status Rules
 
@@ -35,6 +41,8 @@ The operating rule is simple: every promoted research object should be traceable
 - `scripts/register_transcripts.rb` regenerates transcript registration from `interviews/transcripts/` with conservative metadata defaults.
 - `scripts/validate_knowledge.rb` checks transcript coverage, source-version hashing, quote-span integrity, atomic-insight field completeness, and pillar-label compliance.
 - `scripts/validate_wiki.rb` checks wiki reachability, internal links, claim/insight/quote references, and live terminology.
+- `wiki/workflows/ingest-new-transcript.md` describes the source -> insight -> claim -> wiki update loop for new transcripts.
+- `wiki/schema.md` is the LLM-maintenance schema for the wiki layer.
 
 ## Hardening Snapshot
 

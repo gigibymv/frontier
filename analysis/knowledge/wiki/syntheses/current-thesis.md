@@ -26,5 +26,4 @@ The strongest current evidence is not that firms eliminate humans. It is that th
 
 ## Use In Discussion
 
-Use this page as a starting point for discussion, not as final slide copy. Slide copy must be checked against `../deck_trace/`.
-
+Use this page as a starting point for discussion, not as final slide copy. Slide copy must be checked against `../../deck_trace/`.

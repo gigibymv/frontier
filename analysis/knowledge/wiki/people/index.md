@@ -13,9 +13,10 @@ People pages are lightweight maps from interviewees to anchored insights, claims
 - [Mitchell Fierro](mitchell-fierro.md)
 - [Nishith Sahu](nishith-sahu.md)
 - [Pat Sheth](pat-sheth.md)
+- [Tyler Malone](tyler-malone.md)
 - [Vijay Devatha](vijay-devatha.md)
+- [Whoz](whoz.md)
 
 ## Use
 
 Use these pages when checking whether a claim is attributable to a person. For source truth, follow the listed `insight_id` and `quote_span_id` back to the evidence backend.
-

@@ -40,11 +40,10 @@ The strongest current clusters are:
 
 ## Source Trail
 
-- `../claims/synthesized_claims.yaml`
-- `../insights/atomic/`
+- `../../claims/synthesized_claims.yaml`
+- `../../insights/atomic/`
 
 ## Open Questions
 
 - Which Operating Capabilities are mature enough to become scorecard items?
 - Which are merely frontier anecdotes or early signals?
-

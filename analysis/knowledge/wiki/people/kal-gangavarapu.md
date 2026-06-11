@@ -2,7 +2,7 @@
 
 ## Context
 
-Startup interview source with anchored evidence on token buckets, legal/compliance review shifts, and customer-trust edge cases.
+Enterprise-classified source in the registry, stored under the startup transcript folder, with anchored evidence on token buckets, legal/compliance review shifts, and customer-trust edge cases.
 
 ## Strongest Supported Insights
 
@@ -26,4 +26,3 @@ Startup interview source with anchored evidence on token buckets, legal/complian
 - `qsp-kal-token-buckets-20260608-001`
 - `qsp-kal-legal-summary-review-shift-20260608-001`
 - `qsp-kal-customer-trust-edge-cases-20260608-001`
-

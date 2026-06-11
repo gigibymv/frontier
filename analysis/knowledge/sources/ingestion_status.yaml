@@ -1,0 +1,63 @@
+---
+schema_version: 0.1
+description: >
+  Per-source processing status for the Frontier LLM Wiki. This does not replace
+  the source registry; it makes incomplete ingestion explicit so registered-only
+  transcripts do not look fully integrated.
+allowed_statuses:
+  - registered_only
+  - quote_spans_only
+  - integrated_into_insights
+sources:
+  - source_id: src-enterprise-20260611-dmitry-shkolnik
+    status: integrated_into_insights
+  - source_id: src-enterprise-20260609-pat-sheth
+    status: integrated_into_insights
+  - source_id: src-enterprise-20260611-taoufik-arif
+    status: registered_only
+  - source_id: src-expert-20260604-aaron-white
+    status: registered_only
+  - source_id: src-startup-20260527-aditya-nemmaluri
+    status: registered_only
+  - source_id: src-startup-20260508-alec-dickinson
+    status: integrated_into_insights
+  - source_id: src-startup-20260520-amrish-macedo
+    status: registered_only
+  - source_id: src-startup-20260608-arnon
+    status: registered_only
+  - source_id: src-startup-20260526-benhamin-jiang
+    status: registered_only
+  - source_id: src-startup-20260512-catalin-vieru
+    status: registered_only
+  - source_id: src-startup-20260507-charles-barton
+    status: registered_only
+  - source_id: src-startup-20260601-cullen-brown
+    status: integrated_into_insights
+  - source_id: src-startup-20260601-daniel-guzman-follow-up
+    status: integrated_into_insights
+  - source_id: src-startup-20260522-daniel-guzman
+    status: integrated_into_insights
+  - source_id: src-startup-20260608-kal-gangavarapu
+    status: integrated_into_insights
+  - source_id: src-startup-20260609-kunal-datta-follow-up
+    status: registered_only
+  - source_id: src-startup-20260511-kunal-datta
+    status: registered_only
+  - source_id: src-startup-20260522-mahesh
+    status: registered_only
+  - source_id: src-startup-20260521-michael-bernstein-follow-up
+    status: registered_only
+  - source_id: src-startup-20260512-michael-bernstein
+    status: integrated_into_insights
+  - source_id: src-startup-20260601-mitchell-fierro
+    status: integrated_into_insights
+  - source_id: src-startup-20260603-nishith-sahu
+    status: integrated_into_insights
+  - source_id: src-startup-20260520-tyler-malone
+    status: integrated_into_insights
+  - source_id: src-startup-20260520-varun-shrimal
+    status: registered_only
+  - source_id: src-startup-20260514-vijay-devatha
+    status: integrated_into_insights
+  - source_id: src-startup-20260611-whoz
+    status: integrated_into_insights

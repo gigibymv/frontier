@@ -2,7 +2,7 @@
 
 **Client:** Microsoft  
 **Team:** Marco Iansiti, Jen Stave, Ellora Sarkar, Dilina Abudurexiti, Elisabeth Beltinger, Tyler Richards, Mark Cherepashensky  
-**Last updated:** 2026-06-10
+**Last updated:** 2026-06-11
 
 ---
 
@@ -32,7 +32,7 @@ Frontier Firm/
 ├── interviews/
 │   ├── raw/                         ← original .docx + scorecard .xlsx files
 │   └── transcripts/                 ← markdown-converted transcripts
-│       ├── startups/                ← 21 startup interviews
+│       ├── startups/                ← 22 startup-folder transcripts
 │       ├── enterprise/              ← 3 enterprise interviews
 │       └── expert/                  ← 1 expert interview
 └── analysis/
@@ -45,20 +45,20 @@ Frontier Firm/
 
 ---
 
-## Interview Coverage (as of 2026-06-10)
+## Interview Coverage (as of 2026-06-11)
 
 | Type | Count | Notes |
 |------|-------|-------|
-| Startups | 21 | B2B SaaS, fintech, prof. services, logistics |
+| Startup-folder transcripts | 22 | Mostly startup / scaleup sources; some records remain `mixed_or_unknown` or enterprise-classified in the source registry |
 | Enterprise | 3 | Tech, manufacturing (J&J), financial services |
 | Expert | 1 | Aaron White — framework validation |
-| **Total** | **25** | Target: 25–30 |
+| **Total** | **26** | Target: 25–30 |
 
 ---
 
 ## Key Outputs
 
 - `output/MSFT-Frontier Firms-CheckIn4 - 2026.06.12.pptx` — latest check-in deck (scorecard draft, case studies, operating model framework)
-- `analysis/interviews/interview-synthesis.md` — 25 structured interview profiles across 13 dimensions + cross-cutting observations
+- `analysis/interviews/interview-synthesis.md` — structured interview profiles across 13 dimensions + cross-cutting observations
 - `analysis/framework/dimension-mapping.md` — mapping of interview dimensions to the three-pillar framework
 - `analysis/operating-capabilities/slide-traits-bilingual.md` — bilingual operating-capabilities slide trait guide with evidence status

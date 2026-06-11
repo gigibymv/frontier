@@ -1,5 +1,6 @@
 schema_version: 0.1
 purpose: Every deck-level claim should be traceable to upstream research objects and reviewed risk.
+registry_role: risk_inventory_not_slide_ready_approval
 
 required_fields:
   - slide_id
