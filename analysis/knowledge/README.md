@@ -22,6 +22,7 @@ The operating rule is simple: every promoted research object should be traceable
 - `clusters/` proposes candidate grouping structures for later synthesis work.
 - `deck_trace/` provides the contract for slide-level traceability and risk review.
 - `workflows/` defines how new evidence enters the system and how material is promoted or challenged.
+- `wiki/` is the LLM-maintained readable layer: index, log, concepts, people, sources, syntheses, and open questions.
 
 ## Status Rules
 
@@ -33,6 +34,7 @@ The operating rule is simple: every promoted research object should be traceable
 
 - `scripts/register_transcripts.rb` regenerates transcript registration from `interviews/transcripts/` with conservative metadata defaults.
 - `scripts/validate_knowledge.rb` checks transcript coverage, source-version hashing, quote-span integrity, atomic-insight field completeness, and pillar-label compliance.
+- `scripts/validate_wiki.rb` checks wiki reachability, internal links, claim/insight/quote references, and live terminology.
 
 ## Hardening Snapshot
 
